@@ -1,0 +1,326 @@
+/*Main*/
+
+body{
+    margin: 0;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,sans-serif;
+    line-height: 1.5;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #61dafb;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+    opacity: 1;
+}
+
+.page{
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+*, :before, :after{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+.colored{
+    color: #61dafb;
+}
+
+.container{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/*Intro*/
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+    background: #20232a url("../images/logo.svg") center;
+}
+
+.intro__inner{
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+.intro__title{
+    color: #fff;
+    font-size: 150px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+}
+
+.intro__subtitle{
+    margin-top: 20px;
+    font-family: "Segoe print", cursive;
+    font-size: 70px;
+    color: #fff;
+    text-align: center;
+}
+
+/*Header*/
+
+.header{
+    padding-top: 30px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;    
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: #61dafb;
+
+    cursor: pointer;
+}
+
+/*Navigation*/
+
+.nav{
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.nav__link{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    position: relative;
+
+    color: #fff;
+    text-decoration: none;
+
+    transition: color 0.1s linear;
+
+    cursor: pointer;
+}
+
+.nav__link:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    opacity: 0;
+
+    background-color: #61dafb;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity 0.1s linear;
+}
+
+.nav__link:hover {
+    color: #61dafb;  
+}
+
+.nav__link:hover:after {
+    opacity: 1;
+}
+
+/*Slider*/
+
+.slider{
+    width: 100%;
+    
+    position: relative;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    margin-bottom: 25px;
+}
+
+.slider__inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider__item__intro{
+    width: 23%;
+    padding: 20px 0;
+
+    border-top: 3px solid #fff;
+    opacity: 0.6;
+
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.slider__item__intro.active{
+    opacity: 1;
+}
+
+.slider__item{
+    width: 23%;
+    padding: 20px 0;
+
+    border-top: 3px solid #20232a;
+    opacity: 0.6;
+
+    font-size: 18px;
+    color: #20232a;
+    text-transform: uppercase;
+}
+
+.slider__item.active{
+    opacity: 1;
+}
+
+
+.slider__num{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/*Footer*/
+
+.footer{
+    color: #fff ;
+    background-color: #20232a;
+    margin-top: auto;
+    padding: 30px;
+}
+
+.footer__inner{
+    width: 90%;
+
+    display: flex;
+}
+
+.footer__item{
+    width: 33%;
+    opacity: 0.6;
+}
+
+/*What*/
+
+.what{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+
+    background: #fff;
+    color: #20232a;
+}
+
+.what__item{
+    float: left;
+    width: 50%;
+    padding: 50px 20px;
+}
+
+.what__title{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.what__text{
+    font-size: 20px;
+    text-align: left;
+}
+
+.what__list{
+    font-size: 18px;
+    text-align: left;
+}
+
+/*HTML*/
+
+.html{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+
+    background: #fff;
+    color: #20232a;
+}
+
+.html__title{
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.html__subtitle{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.html__text{
+    font-size: 20px;
+    text-align: left;
+}
+
+/*Frame*/
+
+.frame{
+    color:#fff;
+    background:#20232a;
+    font-size: 14px;
+    border-radius: 10px;
+    margin :25px -30px;
+    padding: 0 15px;
+}
+
+/*Code*/
+
+.code{
+    padding: 0 3px;
+    background: rgba(97, 218, 251, 0.2);
+}
+
+/*Example*/
+
+.example a{
+    padding: 0 3px;
+    margin: 0;
+    text-decoration: none;
+    color: #20232a;
+    background: rgba(97, 218, 251, 0.2);
+    font-weight: bold;
+
+    transition: background-color 0.1s linear;
+
+    cursor: pointer;
+}
+
+.example a:hover{
+    background: rgba(97, 218, 251, 0.5);
+}
