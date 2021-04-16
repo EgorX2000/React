@@ -1,0 +1,241 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link href="CSS/React.css" rel="stylesheet">
+		<title>
+			React
+		</title>
+	</head>
+	<body>
+		<div class="page">
+			<header class="header">
+				<div class="container">
+					<div class="header__inner">
+						<div class="header__logo" href="#">React</div>
+
+						<nav class="nav">
+							<a class="nav__link" href="#what">Что такое React и зачем его использовать?</a>
+							<a class="nav__link" href="#html">Добавляем React на свой HTML сайт</a>
+							<a class="nav__link" href="#">Создаем свое приложение на React</a>
+						</nav>
+					</div>
+				</div>
+			</header>
+
+			<div class="intro"><a name="intro"></a>
+				<div class="container">
+					<div class="intro__inner">
+						<h1 class="intro__title">Welcome to <span class="colored">React</span></h1>
+						<h2 class="intro__subtitle">Краткий гайд</h2>
+					</div>
+				</div>
+
+				<div class="slider" style="position: absolute;">
+					<div class="container">
+						<div class="slider__inner">
+							<div class="slider__item__intro active">
+								<span class="slider__num">01</span>
+								Intro
+							</div>
+							<div class="slider__item__intro">
+								<span class="slider__num">02</span>
+								Что это такое?
+							</div>
+							<div class="slider__item__intro">
+								<span class="slider__num">03</span>
+								Сайт
+							</div>
+							<div class="slider__item__intro">
+								<span class="slider__num">04</span>
+								Приложение
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="what"><a name="what"></a>
+				<div class="container">
+					<div class="what__item">
+						<h1 class="what__title">Что такое React</h1>
+						<p class="what__text">
+								React – самая популярная библиотека JavaScript для разработки пользовательского интерфейса (UI). React предлагает отличный ответ на входные данные пользователя, используя новый метод рендеринга веб-сайтов.
+								Компоненты этого инструмента были разработаны Facebook. Он был запущен как инструмент JavaScript с открытым исходным кодом в 2013 году. В настоящее время React опережает своих основных конкурентов, таких как Angular и Bootstrap, две наиболее продаваемые библиотеки JavaScript своего времени.
+						</p>
+					</div>
+					<div class="what__item">
+						<h1 class="what__title">Зачем использовать React?</h1>
+						<p class="what__text">
+							React используется сотнями крупных компаний по всему миру, включая Netflix, Airbnb, American Express, Facebook, WhatsApp, eBay и Instagram. Это доказательство того, что у инструмента есть ряд преимуществ, с которыми невозможно конкурировать. Вот некоторые из причин, чтобы использовать его:
+							<ul class="what__list">
+								<li>
+									Простота в Использовании
+									<p>
+										React – это JavaScript библиотека GUI с открытым исходным кодом, сосредоточенная на одной конкретной цели – эффективном выполнение задач в рамках разработки пользовательского интерфейса. Его можно отнести к категории “V” в архитектурном шаблоне MVC.
+									</p>
+								</li>
+								<li>
+									Поддерживает Java-компонент Многократного Использования
+									<p>
+										React позволяет повторно использовать компоненты, которые были разработаны в других приложениях, использующих ту же функцию. Возможность повторного использования компонента является явным преимуществом для разработчиков.
+									</p>
+								</li>
+								<li>
+									Простое Написание Компонентов
+									<p>
+										Компонент React создать проще, поскольку он использует JSX, опциональное расширение синтаксиса JavaScript, которое позволяет комбинировать HTML с JavaScript.
+									</p>
+								</li>
+							</ul>
+						</p>
+					</div>
+				</div>
+
+				<div class="slider">
+					<div class="container">
+						<div class="slider__inner">
+							<div class="slider__item">
+								<span class="slider__num">01</span>
+								Intro
+							</div>
+							<div class="slider__item active">
+								<span class="slider__num">02</span>
+								Что это такое?
+							</div>
+							<div class="slider__item">
+								<span class="slider__num">03</span>
+								Сайт
+							</div>
+							<div class="slider__item">
+								<span class="slider__num">04</span>
+								Приложение
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="html"><a name="html"></a>
+				<div class="container">
+					<div class="html__text">
+						<h1 class="html__title">Добавляем React на свой HTML сайт</h1>
+						<ul class="html__text">
+							<li>
+								<h1 class="html__subtitle">Добавляем DOM-контейнер в HTML</h1>
+								<p>Для начала, откройте HTML файл страницы, которую хотите отредактировать. Добавьте пустой тег <code class="code">&ltdiv></code> в месте, где вы хотите отобразить что-нибудь с помощью React. Например:</p>
+								<div class="frame">
+									<pre style="margin: 1rem;">
+										<code>
+<span style="color:#6b9955; ">&lt;!-- ... остальной HTML ... --></span>
+										
+<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">div </span><span style="color:#9cdcfe; ">id</span><span style="color:#d4d4d4; ">=</span><span style="color:#ce915b; ">"like_button_container"</span><span style="color:#808073; ">></span><span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">div</span><span style="color:#808073; ">></span>
+										
+<span style="color:#529956 ">&lt;!-- ... остальной HTML ... --></span>
+										</code></pre>
+								</div>
+								<p>Затем назначьте созданному <code class="code">&ltdiv></code> уникальный атрибут <code class="code">id</code>. Это позволит впоследствии найти тег из JavaScript кода и отобразить React-компоненты внутри него.</p>
+							</li>
+							<li>
+								<h1 class="html__subtitle">Добавляем script-теги</h1>
+								<p>Теперь добавьте три <code class="code">&ltscript></code>-тега перед закрывающим тегом <code class="code">&lt/body>:</code></p>
+								<div class="frame">
+									<pre style="margin: 1rem;">
+										<code>
+	<span style="color:#6b9955; ">&lt;!-- ... остальной HTML ... --&gt;</span>
+	<span style="color:#6b9955; ">&lt;!-- Загрузим React. --&gt;</span>
+	<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">script </span><span style="color:#9cdcfe; ">src</span><span style="color:#d4d4d4; ">=</span><span style="color:#ce915b; ">"https://unpkg.com/react@16/umd/react.development.js"</span><span style="color:#9cdcfe; "> crossorigin</span></span><span style="color:#808073; ">&gt;</span><span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">script</span><span style="color:#808073; ">&gt;</span>
+	<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">script </span><span style="color:#9cdcfe; ">src</span><span style="color:#d4d4d4; ">=</span><span style="color:#ce915b; ">"https://unpkg.com/react-dom@16/umd/react-dom.development.js"</span><span style="color:#9cdcfe; "> crossorigin</span></span><span style="color:#808073; ">&gt;</span><span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">script</span><span style="color:#808073; ">&gt;</span>
+
+	<span style="color:#6b9955; ">&lt;!-- Загрузим наш React-компонент. --&gt;</span>
+	<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">script </span><span style="color:#9cdcfe; ">src</span><span style="color:#d4d4d4; ">=</span><span style="color:#ce915b; ">"like_button.js"</span><span style="color:#808073; ">&gt;</span><span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">script</span><span style="color:#808073; ">&gt;</span>
+
+<span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">body</span><span style="color:#808073; ">&gt;</span>	
+										</code></pre>
+								</div>
+							</li>
+							<li>
+								<h1 class="html__subtitle">Создаём React-компонент</h1>
+								<p>Создайте файл с именем <code class="code">like_button.js</code> рядом с вашим HTML файлом.</p>
+								<p>Возьмите этот стартовый код и вставьте его в созданный ранее файл:</p>
+								<div class="frame">
+									<pre style="margin: 1rem;">
+										<code>
+<span style="color:#ce915b; ">"use strict"</span><span style="color:#d4d4d4; ">;</span>
+<span style="color:#358bd6; ">const</span><span style="color:#4fc1ff; "> e </span><span style="color:#d4d4d4; ">=</span><span style="color:#9cdcfe; "> React</span><span style="color:#d4d4d4; ">.</span><span style="color:#9cdcfe; ">createElement</span><span style="color:#d4d4d4; ">;</span>
+
+<span style="color:#358bd6; ">class</span><span style="color:#4ec9b0; "> LikeButton </span><span style="color:#358bd6; ">extends</span><span style="color:#4ec9b0; "> React</span><span style="color:#d4d4d4; ">.</span><span style="color:#4ec9b0; ">Component </span><span style="color:#d4d4d4; ">{</span>
+  <span style="color:#358bd6; ">constructor</span><span style="color:#d4d4d4; ">(</span><span style="color:#9cdcfe; ">props</span><span style="color:#d4d4d4; ">)</span> <span style="color:#d4d4d4; ">{</span>
+	<span style="color:#358bd6; ">super</span><span style="color:#d4d4d4; ">(</span><span style="color:#9cdcfe; ">props</span><span style="color:#d4d4d4; ">)</span><span style="color:#d4d4d4; ">;</span>
+	<span style="color:#358bd6; ">this</span><span style="color:#d4d4d4; ">.</span><span style="color:#9cdcfe; ">state </span><span style="color:#d4d4d4; ">=</span> <span style="color:#d4d4d4; ">{</span><span style="color:#9cdcfe; "> liked</span><span style="color:#d4d4d4; ">:</span> <span style="color:#358bd6; ">false</span> <span style="color:#d4d4d4; ">}</span><span style="color:#d4d4d4; ">;</span>
+  <span style="color:#d4d4d4; ">}</span>
+
+  <span style="color:#dcdcaa">render</span><span style="color:#d4d4d4; ">(</span><span style="color:#d4d4d4; ">)</span> <span style="color:#d4d4d4; ">{</span>
+	<span style="color:#c586c0; ">if</span> <span style="color:#d4d4d4; ">(</span><span style="color:#358bd6; ">this</span><span style="color:#d4d4d4; ">.</span><span style="color:#9cdcfe; ">state</span><span style="color:#d4d4d4; ">.</span><span style="color:#9cdcfe; ">liked</span><span style="color:#d4d4d4; ">)</span> <span style="color:#d4d4d4; ">{</span>
+	  <span style="color:#c586c0; ">return</span> <span style="color:#ce915b; ">"You liked this."</span><span style="color:#d4d4d4; ">;</span>
+	<span style="color:#d4d4d4; ">}</span>
+
+	<span style="color:#c586c0; ">return</span><span style="color:#dcdcaa"> e</span><span style="color:#d4d4d4; ">(</span>
+	  <span style="color:#ce915b; ">"button"</span><span style="color:#d4d4d4; ">,</span>
+	  <span style="color:#d4d4d4; ">{</span><span style="color:#dcdcaa"> onClick</span><span style="color:#d4d4d4; ">:</span> <span style="color:#d4d4d4; ">(</span><span style="color:#d4d4d4; ">)</span> <span style="color:#358bd6; ">=</span><span style="color:#358bd6; ">&gt;</span> <span style="color:#358bd6; ">this</span><span style="color:#d4d4d4; ">.</span><span style="color:#dcdcaa">setState</span><span style="color:#d4d4d4; ">(</span><span style="color:#d4d4d4; ">{</span><span style="color:#9cdcfe; "> liked</span><span style="color:#d4d4d4; ">:</span> <span style="color:#358bd6; ">true</span> <span style="color:#d4d4d4; ">}</span><span style="color:#d4d4d4; ">)</span> <span style="color:#d4d4d4; ">}</span><span style="color:#d4d4d4; ">,</span>
+	  <span style="color:#ce915b; ">"Like"</span>
+	<span style="color:#d4d4d4; ">)</span><span style="color:#d4d4d4; ">;</span>
+  <span style="color:#d4d4d4; ">}</span>
+<span style="color:#d4d4d4; ">}</span>
+										</code></pre>
+								</div>
+								<p>Добавьте ещё 2 строки в конец файла <code class="code">like_button.js</code>, после стартового кода:</p>
+								<div class="frame">
+									<pre style="margin: 1rem;">
+										<code>
+<span style="color:#6b9955; ">// ... стартовый код ...</span>
+
+<span style="color:#358bd6; ">const</span><span style="color:#4fc1ff; "> domContainer </span><span style="color:#d4d4d4; ">=</span><span style="color:#9cdcfe; "> document</span><span style="color:#d4d4d4; ">.</span><span style="color:#dcdcaa">querySelector</span><span style="color:#d4d4d4; ">(</span><span style="color:#ce915b; ">"#like_button_container"</span><span style="color:#d4d4d4; ">)</span><span style="color:#d4d4d4; ">;</span>
+<span style="color:#9cdcfe; ">ReactDOM</span><span style="color:#d4d4d4; ">.</span><span style="color:#dcdcaa">render</span><span style="color:#d4d4d4; ">(</span><span style="color:#dcdcaa">e</span><span style="color:#d4d4d4; ">(</span><span style="color:#9cdcfe; ">LikeButton</span><span style="color:#d4d4d4; ">)</span><span style="color:#d4d4d4; ">,</span><span style="color:#9cdcfe; "> domContainer</span><span style="color:#d4d4d4; ">)</span><span style="color:#d4d4d4; ">;</span>
+										</code></pre>
+								</div>
+								<p>Этот код ищет контейнер <code class="code">&ltdiv></code>, который мы добавили на первом шаге, а затем отображает наш React-компонент с кнопкой «Нравится» внутри него.</p>
+								<h1 class="html__subtitle">Готово!</h1>
+								<p>Вот и всё! <b>Вы только что добавили свой первый React-компонент на страницу.</b></p>
+								<p class="example"><a href="https://gist.github.com/gaearon/6668a1f6986742109c00a581ce704605/archive/f6c882b6ae18bde42dcf6fdb751aae93495a2275.zip" target="_self" rel="nofollow noopener noreferrer">Скачать код примера (архив 2 Кбайт)</a></p>
+								<br>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="slider">
+					<div class="container">
+						<div class="slider__inner">
+							<div class="slider__item">
+								<span class="slider__num">01</span>
+								Intro
+							</div>
+							<div class="slider__item">
+								<span class="slider__num">02</span>
+								Что это такое?
+							</div>
+							<div class="slider__item  active">
+								<span class="slider__num">03</span>
+								Сайт
+							</div>
+							<div class="slider__item">
+								<span class="slider__num">04</span>
+								Приложение
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__inner">
+						<div class="footer__item">
+							Krivoshapkin Egor 2021
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
