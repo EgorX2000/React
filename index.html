@@ -16,7 +16,7 @@
 						<nav class="nav">
 							<a class="nav__link" href="#what">Что такое React и зачем его использовать?</a>
 							<a class="nav__link" href="#html">Добавляем React на свой HTML сайт</a>
-							<a class="nav__link" href="#">Создаем свое приложение на React</a>
+							<a class="nav__link" href="#app">Создаем свое приложение на React</a>
 						</nav>
 					</div>
 				</div>
@@ -122,32 +122,32 @@
 						<ul class="html__text">
 							<li>
 								<h1 class="html__subtitle">Добавляем DOM-контейнер в HTML</h1>
-								<p>Для начала, откройте HTML файл страницы, которую хотите отредактировать. Добавьте пустой тег <code class="code">&ltdiv></code> в месте, где вы хотите отобразить что-нибудь с помощью React. Например:</p>
+								<p>Для начала, откройте HTML файл страницы, которую хотите отредактировать. Добавьте пустой тег <code class="code">&lt;div></code> в месте, где вы хотите отобразить что-нибудь с помощью React. Например:</p>
 								<div class="frame">
-									<pre style="margin: 1rem;">
+									<pre style="margin: 0.5rem;">
 										<code>
 <span style="color:#6b9955; ">&lt;!-- ... остальной HTML ... --></span>
 										
-<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">div </span><span style="color:#9cdcfe; ">id</span><span style="color:#d4d4d4; ">=</span><span style="color:#ce915b; ">"like_button_container"</span><span style="color:#808073; ">></span><span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">div</span><span style="color:#808073; ">></span>
+<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">div </span><span style="color:#9cdcfe; ">id</span>=<span style="color:#ce915b; ">"like_button_container"</span><span style="color:#808073; ">></span><span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">div</span><span style="color:#808073; ">></span>
 										
 <span style="color:#529956 ">&lt;!-- ... остальной HTML ... --></span>
 										</code></pre>
 								</div>
-								<p>Затем назначьте созданному <code class="code">&ltdiv></code> уникальный атрибут <code class="code">id</code>. Это позволит впоследствии найти тег из JavaScript кода и отобразить React-компоненты внутри него.</p>
+								<p>Затем назначьте созданному <code class="code">&lt;div></code> уникальный атрибут <code class="code">id</code>. Это позволит впоследствии найти тег из JavaScript кода и отобразить React-компоненты внутри него.</p>
 							</li>
 							<li>
 								<h1 class="html__subtitle">Добавляем script-теги</h1>
 								<p>Теперь добавьте три <code class="code">&ltscript></code>-тега перед закрывающим тегом <code class="code">&lt/body>:</code></p>
 								<div class="frame">
-									<pre style="margin: 1rem;">
+									<pre style="margin: 0.5rem;">
 										<code>
 	<span style="color:#6b9955; ">&lt;!-- ... остальной HTML ... --&gt;</span>
 	<span style="color:#6b9955; ">&lt;!-- Загрузим React. --&gt;</span>
-	<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">script </span><span style="color:#9cdcfe; ">src</span><span style="color:#d4d4d4; ">=</span><span style="color:#ce915b; ">"https://unpkg.com/react@16/umd/react.development.js"</span><span style="color:#9cdcfe; "> crossorigin</span></span><span style="color:#808073; ">&gt;</span><span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">script</span><span style="color:#808073; ">&gt;</span>
-	<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">script </span><span style="color:#9cdcfe; ">src</span><span style="color:#d4d4d4; ">=</span><span style="color:#ce915b; ">"https://unpkg.com/react-dom@16/umd/react-dom.development.js"</span><span style="color:#9cdcfe; "> crossorigin</span></span><span style="color:#808073; ">&gt;</span><span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">script</span><span style="color:#808073; ">&gt;</span>
+	<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">script </span><span style="color:#9cdcfe; ">src</span>=<span style="color:#ce915b; ">"https://unpkg.com/react@16/umd/react.development.js"</span><span style="color:#9cdcfe; "> crossorigin</span></span><span style="color:#808073; ">&gt;</span><span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">script</span><span style="color:#808073; ">&gt;</span>
+	<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">script </span><span style="color:#9cdcfe; ">src</span>=<span style="color:#ce915b; ">"https://unpkg.com/react-dom@16/umd/react-dom.development.js"</span><span style="color:#9cdcfe; "> crossorigin</span></span><span style="color:#808073; ">&gt;</span><span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">script</span><span style="color:#808073; ">&gt;</span>
 
 	<span style="color:#6b9955; ">&lt;!-- Загрузим наш React-компонент. --&gt;</span>
-	<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">script </span><span style="color:#9cdcfe; ">src</span><span style="color:#d4d4d4; ">=</span><span style="color:#ce915b; ">"like_button.js"</span><span style="color:#808073; ">&gt;</span><span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">script</span><span style="color:#808073; ">&gt;</span>
+	<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">script </span><span style="color:#9cdcfe; ">src</span>=<span style="color:#ce915b; ">"like_button.js"</span><span style="color:#808073; ">&gt;</span><span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">script</span><span style="color:#808073; ">&gt;</span>
 
 <span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">body</span><span style="color:#808073; ">&gt;</span>	
 										</code></pre>
@@ -158,45 +158,45 @@
 								<p>Создайте файл с именем <code class="code">like_button.js</code> рядом с вашим HTML файлом.</p>
 								<p>Возьмите этот стартовый код и вставьте его в созданный ранее файл:</p>
 								<div class="frame">
-									<pre style="margin: 1rem;">
+									<pre style="margin: 0.5rem;">
 										<code>
-<span style="color:#ce915b; ">"use strict"</span><span style="color:#d4d4d4; ">;</span>
-<span style="color:#358bd6; ">const</span><span style="color:#4fc1ff; "> e </span><span style="color:#d4d4d4; ">=</span><span style="color:#9cdcfe; "> React</span><span style="color:#d4d4d4; ">.</span><span style="color:#9cdcfe; ">createElement</span><span style="color:#d4d4d4; ">;</span>
+<span style="color:#ce915b; ">"use strict"</span>;
+<span style="color:#358bd6; ">const</span><span style="color:#4fc1ff; "> e </span>=<span style="color:#9cdcfe; "> React</span>.<span style="color:#9cdcfe; ">createElement</span>;
 
-<span style="color:#358bd6; ">class</span><span style="color:#4ec9b0; "> LikeButton </span><span style="color:#358bd6; ">extends</span><span style="color:#4ec9b0; "> React</span><span style="color:#d4d4d4; ">.</span><span style="color:#4ec9b0; ">Component </span><span style="color:#d4d4d4; ">{</span>
-  <span style="color:#358bd6; ">constructor</span><span style="color:#d4d4d4; ">(</span><span style="color:#9cdcfe; ">props</span><span style="color:#d4d4d4; ">)</span> <span style="color:#d4d4d4; ">{</span>
-	<span style="color:#358bd6; ">super</span><span style="color:#d4d4d4; ">(</span><span style="color:#9cdcfe; ">props</span><span style="color:#d4d4d4; ">)</span><span style="color:#d4d4d4; ">;</span>
-	<span style="color:#358bd6; ">this</span><span style="color:#d4d4d4; ">.</span><span style="color:#9cdcfe; ">state </span><span style="color:#d4d4d4; ">=</span> <span style="color:#d4d4d4; ">{</span><span style="color:#9cdcfe; "> liked</span><span style="color:#d4d4d4; ">:</span> <span style="color:#358bd6; ">false</span> <span style="color:#d4d4d4; ">}</span><span style="color:#d4d4d4; ">;</span>
-  <span style="color:#d4d4d4; ">}</span>
+<span style="color:#358bd6; ">class</span><span style="color:#4ec9b0; "> LikeButton </span><span style="color:#358bd6; ">extends</span><span style="color:#4ec9b0; "> React</span>.<span style="color:#4ec9b0; ">Component </span>{
+  <span style="color:#358bd6; ">constructor</span>(<span style="color:#9cdcfe; ">props</span>) {
+	<span style="color:#358bd6; ">super</span>(<span style="color:#9cdcfe; ">props</span>);
+	<span style="color:#358bd6; ">this</span>.<span style="color:#9cdcfe; ">state </span>= {<span style="color:#9cdcfe; "> liked</span>: <span style="color:#358bd6; ">false</span> };
+  }
 
-  <span style="color:#dcdcaa">render</span><span style="color:#d4d4d4; ">(</span><span style="color:#d4d4d4; ">)</span> <span style="color:#d4d4d4; ">{</span>
-	<span style="color:#c586c0; ">if</span> <span style="color:#d4d4d4; ">(</span><span style="color:#358bd6; ">this</span><span style="color:#d4d4d4; ">.</span><span style="color:#9cdcfe; ">state</span><span style="color:#d4d4d4; ">.</span><span style="color:#9cdcfe; ">liked</span><span style="color:#d4d4d4; ">)</span> <span style="color:#d4d4d4; ">{</span>
-	  <span style="color:#c586c0; ">return</span> <span style="color:#ce915b; ">"You liked this."</span><span style="color:#d4d4d4; ">;</span>
-	<span style="color:#d4d4d4; ">}</span>
+  <span style="color:#dcdcaa">render</span>() {
+	<span style="color:#c586c0; ">if</span> (<span style="color:#358bd6; ">this</span>.<span style="color:#9cdcfe; ">state</span>.<span style="color:#9cdcfe; ">liked</span>) {
+	  <span style="color:#c586c0; ">return</span> <span style="color:#ce915b; ">"You liked this."</span>;
+	}
 
-	<span style="color:#c586c0; ">return</span><span style="color:#dcdcaa"> e</span><span style="color:#d4d4d4; ">(</span>
-	  <span style="color:#ce915b; ">"button"</span><span style="color:#d4d4d4; ">,</span>
-	  <span style="color:#d4d4d4; ">{</span><span style="color:#dcdcaa"> onClick</span><span style="color:#d4d4d4; ">:</span> <span style="color:#d4d4d4; ">(</span><span style="color:#d4d4d4; ">)</span> <span style="color:#358bd6; ">=</span><span style="color:#358bd6; ">&gt;</span> <span style="color:#358bd6; ">this</span><span style="color:#d4d4d4; ">.</span><span style="color:#dcdcaa">setState</span><span style="color:#d4d4d4; ">(</span><span style="color:#d4d4d4; ">{</span><span style="color:#9cdcfe; "> liked</span><span style="color:#d4d4d4; ">:</span> <span style="color:#358bd6; ">true</span> <span style="color:#d4d4d4; ">}</span><span style="color:#d4d4d4; ">)</span> <span style="color:#d4d4d4; ">}</span><span style="color:#d4d4d4; ">,</span>
+	<span style="color:#c586c0; ">return</span><span style="color:#dcdcaa"> e</span>(
+	  <span style="color:#ce915b; ">"button"</span>,
+	  {<span style="color:#dcdcaa"> onClick</span>: () <span style="color:#358bd6; ">=</span><span style="color:#358bd6; ">&gt;</span> <span style="color:#358bd6; ">this</span>.<span style="color:#dcdcaa">setState</span>({<span style="color:#9cdcfe; "> liked</span>: <span style="color:#358bd6; ">true</span> }) },
 	  <span style="color:#ce915b; ">"Like"</span>
-	<span style="color:#d4d4d4; ">)</span><span style="color:#d4d4d4; ">;</span>
-  <span style="color:#d4d4d4; ">}</span>
-<span style="color:#d4d4d4; ">}</span>
+	);
+  }
+}
 										</code></pre>
 								</div>
 								<p>Добавьте ещё 2 строки в конец файла <code class="code">like_button.js</code>, после стартового кода:</p>
 								<div class="frame">
-									<pre style="margin: 1rem;">
+									<pre style="margin: 0.5rem;">
 										<code>
 <span style="color:#6b9955; ">// ... стартовый код ...</span>
 
-<span style="color:#358bd6; ">const</span><span style="color:#4fc1ff; "> domContainer </span><span style="color:#d4d4d4; ">=</span><span style="color:#9cdcfe; "> document</span><span style="color:#d4d4d4; ">.</span><span style="color:#dcdcaa">querySelector</span><span style="color:#d4d4d4; ">(</span><span style="color:#ce915b; ">"#like_button_container"</span><span style="color:#d4d4d4; ">)</span><span style="color:#d4d4d4; ">;</span>
-<span style="color:#9cdcfe; ">ReactDOM</span><span style="color:#d4d4d4; ">.</span><span style="color:#dcdcaa">render</span><span style="color:#d4d4d4; ">(</span><span style="color:#dcdcaa">e</span><span style="color:#d4d4d4; ">(</span><span style="color:#9cdcfe; ">LikeButton</span><span style="color:#d4d4d4; ">)</span><span style="color:#d4d4d4; ">,</span><span style="color:#9cdcfe; "> domContainer</span><span style="color:#d4d4d4; ">)</span><span style="color:#d4d4d4; ">;</span>
+<span style="color:#358bd6; ">const</span><span style="color:#4fc1ff; "> domContainer </span>=<span style="color:#9cdcfe; "> document</span>.<span style="color:#dcdcaa">querySelector</span>(<span style="color:#ce915b; ">"#like_button_container"</span>);
+<span style="color:#9cdcfe; ">ReactDOM</span>.<span style="color:#dcdcaa">render</span>(<span style="color:#dcdcaa">e</span>(<span style="color:#9cdcfe; ">LikeButton</span>),<span style="color:#9cdcfe; "> domContainer</span>);
 										</code></pre>
 								</div>
-								<p>Этот код ищет контейнер <code class="code">&ltdiv></code>, который мы добавили на первом шаге, а затем отображает наш React-компонент с кнопкой «Нравится» внутри него.</p>
+								<p>Этот код ищет контейнер <code class="code">&lt;div></code>, который мы добавили на первом шаге, а затем отображает наш React-компонент с кнопкой «Нравится» внутри него.</p>
 								<h1 class="html__subtitle">Готово!</h1>
 								<p>Вот и всё! <b>Вы только что добавили свой первый React-компонент на страницу.</b></p>
-								<p class="example"><a href="https://gist.github.com/gaearon/6668a1f6986742109c00a581ce704605/archive/f6c882b6ae18bde42dcf6fdb751aae93495a2275.zip" target="_self" rel="nofollow noopener noreferrer">Скачать код примера (архив 2 Кбайт)</a></p>
+								<p class="example"><a href="https://gist.github.com/gaearon/6668a1f6986742109c00a581ce704605/archive/f6c882b6ae18bde42dcf6fdb751aae93495a2275.zip" target="_self">Скачать код примера (архив 2 Кбайт)</a></p>
 								<br>
 							</li>
 						</ul>
@@ -214,11 +214,175 @@
 								<span class="slider__num">02</span>
 								Что это такое?
 							</div>
-							<div class="slider__item  active">
+							<div class="slider__item active">
 								<span class="slider__num">03</span>
 								Сайт
 							</div>
 							<div class="slider__item">
+								<span class="slider__num">04</span>
+								Приложение
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="app"><a name="app"></a>
+				<div class="container">
+					<div class="app__text">
+						<h1 class="app__title">Создаём веб-приложение на React JS</h1>
+						<p>С помощью React можно также создавать веб-приложения. Создание одного из них я покажу на примере приложения, показывающего прогноз погоды.</p>
+						<ul class="app__text">
+							<li>
+								<h1 class="app__subtitle">Подготовка</h1>
+								<p>Для начала работы нам понадобится установить <span class="app__links"><a href="https://nodejs.org/ru/" target="_block">Node.js</a></span> и редактор кода, например <span class="app__links"><a href="https://code.visualstudio.com/" target="_block">VS Code</a></span>.</p>
+							</li>
+							<li>
+								<h1 class="app__subtitle">Установка приложения</h1>
+								<p>Откроем командную строку (cmd) и установим  <code class="code">create-react-app</code>:</p>
+								<div class="frame">
+									<pre style="margin: 0.5rem;">
+										<code>
+npm install -g create-react-app
+										</code></pre>
+								</div>
+								<p>Начнем создавать наше приложение прогноза погоды:</p>
+								<div class="frame">
+									<pre style="margin: 0.5rem;">
+										<code>
+create-react-app weather
+										</code></pre>
+								</div>
+								<p>Данной командой мы установим набор инструментов, которые помогут создать наше React-приложение. После этого у нас создастся папка с названием "weather" в папке вашего пользователя. По завершении установки мы сможем запустить приложение командами:</p>								
+								<div class="frame">
+									<pre style="margin: 0.5rem;">
+										<code>
+cd weather
+npm start
+										</code></pre>
+								</div>
+								<p>Новое приложение автоматически откроется в браузере!</p>								
+							</li>
+							<li>
+								<h1 class="app__subtitle">Работа с компонентами</h1>
+								<p>Теперь мы наконец можем приступить к непосредственной работе над нашим веб-приложением. Открываем файл App.js, который находится в папке src, и для удобства работы удаляем всё его содержимое. Затем импортируем React:</p>
+								<div class="frame">
+									<pre style="margin: 0.5rem;">
+										<code>
+<span style="color:#c586c0; ">import</span><span style="color: #9cdcfe "> React</span><span style="color:#c586c0; "> from </span><span style="color:#ce915b; ">"react"</span>;											
+										</code></pre>
+								</div>
+								<p>Теперь нужно создать сам компонент:</p>
+								<div class="frame">
+									<pre style="margin: 0.5rem;">
+										<code>
+<span style="color:#358bd6; ">class</span><span style="color:#4ec9b0; "> App </span><span style="color:#358bd6; ">extends</span><span style="color:#4ec9b0; "> React</span>.<span style="color:#4ec9b0; ">Component</span>{
+
+}
+										</code></pre>
+								</div>
+								<p>Пока наш React компонент ничего не выводит на экран. Чтобы это исправить, нам потребуется метод <code class="code">render()</code>,внутри которогу нужно прописать<code class="code">return()</code>, и уже в этих скопках писать весть HTML:</p>
+								<div class="frame">
+									<pre style="margin: 0.5rem;">
+										<code>
+<span style="color:#6b9955; ">// ... остальной код ...</span>
+	<span style="color:#dcdcaa">render</span>() {
+		<span style="color:#c586c0; ">return</span>(
+			<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">h1</span><span style="color:#808073; ">></span>Hello, World!<span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">h1</span><span style="color:#808073; ">></span>
+		);
+	}
+}
+										</code></pre>
+								</div>
+								<p><b>Важно:</b> <code class="code">return()</code> может возвращать только один элемент (например <code class="code">&lt;div></code>). Поэтому нужно создать только один тег <code class="code">&lt;div></code>, а всё остальное писать внутри него:</p>
+								<div class="frame">
+									<pre style="margin: 0.5rem;">
+										<code>
+<span style="color:#6b9955; ">// ... остальной код ...</span>
+	<span style="color:#dcdcaa">render</span>() {
+		<span style="color:#c586c0; ">return</span>(
+			<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">div</span><span style="color:#808073; ">></span>
+				<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">h1</span><span style="color:#808073; ">></span>Hello, World!<span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">h1</span><span style="color:#808073; ">></span>
+				<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">h1</span><span style="color:#808073; ">></span>Привет, Мир!<span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">h1</span><span style="color:#808073; ">></span>
+			<span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">div</span><span style="color:#808073; ">></span>
+		);
+	}
+}
+										</code></pre>
+								</div>
+								<p>Чтобы приложение заработало, нам надо подключить наш компонент к файлу index.js. Для этого пишем эту строку в конце кода:</p>
+								<div class="frame">
+									<pre style="margin: 0.5rem;">
+										<code>
+<span style="color:#c586c0; ">export default</span><span style="color:#4ec9b0; "> App</span>;
+										</code></pre>
+								</div>
+								<p>Теперь давайте создадим компонент, каторый будет показывать основную информацию о нашем приложении на сайте. Для этого в папке src создаём дополнительную папку components, а в ней создаём файл info.js. После этого открываем его и пишем почти то же самое, что и в файле App.js:</p>
+								<div class="frame">
+									<pre style="margin: 0.5rem;">
+										<code>
+<span style="color:#c586c0; ">import</span><span style="color: #9cdcfe "> React</span><span style="color:#c586c0; "> from </span><span style="color:#ce915b; ">"react"</span>;
+
+
+<span style="color:#358bd6; ">class</span><span style="color:#4ec9b0; "> Info </span><span style="color:#358bd6; ">extends</span><span style="color:#4ec9b0; "> React</span>.<span style="color:#4ec9b0; ">Component</span>{
+	<span style="color:#dcdcaa">render</span>() {
+		<span style="color:#c586c0; ">return</span>(
+			<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">div</span><span style="color:#808073; ">></span>
+				<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">h2</span><span style="color:#808073; ">></span>Погода ➯<span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">h2</span><span style="color:#808073; ">></span>
+				<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">p</span><span style="color:#808073; ">></span>Узнайте погоду в вашем городе!<span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">p</span><span style="color:#808073; ">></span>
+			<span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">div</span><span style="color:#808073; ">></span>
+		);
+	}
+}
+
+<span style="color:#c586c0; ">export default</span><span style="color:#4ec9b0; "> Info</span>;
+										</code></pre>
+								</div>
+								<p>Затем в App подключаем наш новый компонент Info:</p>
+								<div class="frame">
+									<pre style="margin: 0.5rem;">
+										<code>
+<span style="color:#c586c0; ">import</span><span style="color: #9cdcfe "> Info</span><span style="color:#c586c0; "> from </span><span style="color:#ce915b; ">"./components/info"</span>;											
+										</code></pre>
+								</div>
+								<p>Чтобы информация выводилась на экран, добавляем Info в рендер:</p>
+								<div class="frame">
+									<pre style="margin: 0.5rem;">
+										<code>
+<span style="color:#6b9955; ">// ... остальной код ...</span>
+	<span style="color:#dcdcaa">render</span>() {
+		<span style="color:#c586c0; ">return</span>(
+			<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">div</span><span style="color:#808073; ">></span>
+				<span style="color:#808073; ">&lt;</span><span style="color:#4ec9b0; ">Info </span><span style="color:#808073; ">/></span>
+			<span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">div</span><span style="color:#808073; ">></span>
+		);
+	}
+}
+										</code></pre>
+								</div>
+								<p>Теперь наше приложение отображает основную информацию о своём предназначении!</p>
+								<p><img src="./images/app_info.png" style="width: 1320px; height: 743px; margin: 25px -30px;"></p>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="slider">
+					<div class="container">
+						<div class="slider__inner">
+							<div class="slider__item">
+								<span class="slider__num">01</span>
+								Intro
+							</div>
+							<div class="slider__item">
+								<span class="slider__num">02</span>
+								Что это такое?
+							</div>
+							<div class="slider__item">
+								<span class="slider__num">03</span>
+								Сайт
+							</div>
+							<div class="slider__item active">
 								<span class="slider__num">04</span>
 								Приложение
 							</div>
