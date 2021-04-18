@@ -129,7 +129,7 @@
 										<code>
 <span style="color:#6b9955; ">&lt;!-- ... остальной HTML ... --></span>
 										
-<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">div </span><span style="color:#9cdcfe; ">id</span>=<span style="color:#ce915b; ">"like_button_container"</span><span style="color:#808073; ">></span><span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">div</span><span style="color:#808073; ">></span>
+<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">div </span><span style="color:#9cdcfe;; ">id</span>=<span style="color:#ce915b; ">"like_button_container"</span><span style="color:#808073; ">></span><span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">div</span><span style="color:#808073; ">></span>
 										
 <span style="color:#529956 ">&lt;!-- ... остальной HTML ... --></span>
 										</code></pre>
@@ -144,11 +144,11 @@
 										<code>
 	<span style="color:#6b9955; ">&lt;!-- ... остальной HTML ... --&gt;</span>
 	<span style="color:#6b9955; ">&lt;!-- Загрузим React. --&gt;</span>
-	<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">script </span><span style="color:#9cdcfe; ">src</span>=<span style="color:#ce915b; ">"https://unpkg.com/react@16/umd/react.development.js"</span><span style="color:#9cdcfe; "> crossorigin</span></span><span style="color:#808073; ">&gt;</span><span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">script</span><span style="color:#808073; ">&gt;</span>
-	<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">script </span><span style="color:#9cdcfe; ">src</span>=<span style="color:#ce915b; ">"https://unpkg.com/react-dom@16/umd/react-dom.development.js"</span><span style="color:#9cdcfe; "> crossorigin</span></span><span style="color:#808073; ">&gt;</span><span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">script</span><span style="color:#808073; ">&gt;</span>
+	<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">script </span><span style="color:#9cdcfe;; ">src</span>=<span style="color:#ce915b; ">"https://unpkg.com/react@16/umd/react.development.js"</span><span style="color:#9cdcfe;; "> crossorigin</span><span style="color:#808073; ">&gt;</span><span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">script</span><span style="color:#808073; ">&gt;</span>
+	<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">script </span><span style="color:#9cdcfe;; ">src</span>=<span style="color:#ce915b; ">"https://unpkg.com/react-dom@16/umd/react-dom.development.js"</span><span style="color:#9cdcfe;; "> crossorigin</span><span style="color:#808073; ">&gt;</span><span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">script</span><span style="color:#808073; ">&gt;</span>
 
 	<span style="color:#6b9955; ">&lt;!-- Загрузим наш React-компонент. --&gt;</span>
-	<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">script </span><span style="color:#9cdcfe; ">src</span>=<span style="color:#ce915b; ">"like_button.js"</span><span style="color:#808073; ">&gt;</span><span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">script</span><span style="color:#808073; ">&gt;</span>
+	<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">script </span><span style="color:#9cdcfe;; ">src</span>=<span style="color:#ce915b; ">"like_button.js"</span><span style="color:#808073; ">&gt;</span><span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">script</span><span style="color:#808073; ">&gt;</span>
 
 <span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">body</span><span style="color:#808073; ">&gt;</span>	
 										</code></pre>
@@ -162,22 +162,22 @@
 									<pre style="margin: 0.5rem;">
 										<code>
 <span style="color:#ce915b; ">"use strict"</span>;
-<span style="color:#358bd6; ">const</span><span style="color:#4fc1ff; "> e </span>=<span style="color:#9cdcfe; "> React</span>.<span style="color:#9cdcfe; ">createElement</span>;
+<span style="color:#358bd6; ">const</span><span style="color:#4fc1ff; "> e </span>=<span style="color:#9cdcfe;; "> React</span>.<span style="color:#9cdcfe;; ">createElement</span>;
 
 <span style="color:#358bd6; ">class</span><span style="color:#4ec9b0; "> LikeButton </span><span style="color:#358bd6; ">extends</span><span style="color:#4ec9b0; "> React</span>.<span style="color:#4ec9b0; ">Component </span>{
-  <span style="color:#358bd6; ">constructor</span>(<span style="color:#9cdcfe; ">props</span>) {
-	<span style="color:#358bd6; ">super</span>(<span style="color:#9cdcfe; ">props</span>);
-	<span style="color:#358bd6; ">this</span>.<span style="color:#9cdcfe; ">state </span>= {<span style="color:#9cdcfe; "> liked</span>: <span style="color:#358bd6; ">false</span> };
+  <span style="color:#358bd6; ">constructor</span>(<span style="color:#9cdcfe;; ">props</span>) {
+	<span style="color:#358bd6; ">super</span>(<span style="color:#9cdcfe;; ">props</span>);
+	<span style="color:#358bd6; ">this</span>.<span style="color:#9cdcfe;; ">state </span>= {<span style="color:#9cdcfe;; "> liked</span>: <span style="color:#358bd6; ">false</span> };
   }
 
-  <span style="color:#dcdcaa">render</span>() {
-	<span style="color:#c586c0; ">if</span> (<span style="color:#358bd6; ">this</span>.<span style="color:#9cdcfe; ">state</span>.<span style="color:#9cdcfe; ">liked</span>) {
+  <span style="color:#dcdcaa; ">render</span>() {
+	<span style="color:#c586c0; ">if</span> (<span style="color:#358bd6; ">this</span>.<span style="color:#9cdcfe;; ">state</span>.<span style="color:#9cdcfe;; ">liked</span>) {
 	  <span style="color:#c586c0; ">return</span> <span style="color:#ce915b; ">"You liked this."</span>;
 	}
 
-	<span style="color:#c586c0; ">return</span><span style="color:#dcdcaa"> e</span>(
+	<span style="color:#c586c0; ">return</span><span style="color:#dcdcaa; "> e</span>(
 	  <span style="color:#ce915b; ">"button"</span>,
-	  {<span style="color:#dcdcaa"> onClick</span>: () <span style="color:#358bd6; ">=</span><span style="color:#358bd6; ">&gt;</span> <span style="color:#358bd6; ">this</span>.<span style="color:#dcdcaa">setState</span>({<span style="color:#9cdcfe; "> liked</span>: <span style="color:#358bd6; ">true</span> }) },
+	  {<span style="color:#dcdcaa; "> onClick</span>: () <span style="color:#358bd6; ">=</span><span style="color:#358bd6; ">&gt;</span> <span style="color:#358bd6; ">this</span>.<span style="color:#dcdcaa; ">setState</span>({<span style="color:#9cdcfe;; "> liked</span>: <span style="color:#358bd6; ">true</span> }) },
 	  <span style="color:#ce915b; ">"Like"</span>
 	);
   }
@@ -190,8 +190,8 @@
 										<code>
 <span style="color:#6b9955; ">// ... стартовый код ...</span>
 
-<span style="color:#358bd6; ">const</span><span style="color:#4fc1ff; "> domContainer </span>=<span style="color:#9cdcfe; "> document</span>.<span style="color:#dcdcaa">querySelector</span>(<span style="color:#ce915b; ">"#like_button_container"</span>);
-<span style="color:#9cdcfe; ">ReactDOM</span>.<span style="color:#dcdcaa">render</span>(<span style="color:#dcdcaa">e</span>(<span style="color:#9cdcfe; ">LikeButton</span>),<span style="color:#9cdcfe; "> domContainer</span>);
+<span style="color:#358bd6; ">const</span><span style="color:#4fc1ff; "> domContainer </span>=<span style="color:#9cdcfe;; "> document</span>.<span style="color:#dcdcaa; ">querySelector</span>(<span style="color:#ce915b; ">"#like_button_container"</span>);
+<span style="color:#9cdcfe;; ">ReactDOM</span>.<span style="color:#dcdcaa; ">render</span>(<span style="color:#dcdcaa; ">e</span>(<span style="color:#9cdcfe;; ">LikeButton</span>),<span style="color:#9cdcfe;; "> domContainer</span>);
 										</code></pre>
 								</div>
 								<p>Этот код ищет контейнер <code class="code">&lt;div></code>, который мы добавили на первом шаге, а затем отображает наш React-компонент с кнопкой «Нравится» внутри него.</p>
@@ -270,7 +270,7 @@ npm start
 								<div class="frame">
 									<pre style="margin: 0.5rem;">
 										<code>
-<span style="color:#c586c0; ">import</span><span style="color: #9cdcfe "> React</span><span style="color:#c586c0; "> from </span><span style="color:#ce915b; ">"react"</span>;											
+<span style="color:#c586c0; ">import</span><span style="color: #9cdcfe; "> React</span><span style="color:#c586c0; "> from </span><span style="color:#ce915b; ">"react"</span>;											
 										</code></pre>
 								</div>
 								<p>Теперь нужно создать сам компонент:</p>
@@ -282,12 +282,12 @@ npm start
 }
 										</code></pre>
 								</div>
-								<p>Пока наш React компонент ничего не выводит на экран. Чтобы это исправить, нам потребуется метод <code class="code">render()</code>,внутри которогу нужно прописать<code class="code">return()</code>, и уже в этих скопках писать весть HTML:</p>
+								<p>Пока наш React компонент ничего не выводит на экран. Чтобы это исправить, нам потребуется метод <code class="code">render()</code>,внутри которого нужно прописать <code class="code">return()</code>, и уже в этих скопках писать весть HTML:</p>
 								<div class="frame">
 									<pre style="margin: 0.5rem;">
 										<code>
 <span style="color:#6b9955; ">// ... остальной код ...</span>
-	<span style="color:#dcdcaa">render</span>() {
+	<span style="color:#dcdcaa; ">render</span>() {
 		<span style="color:#c586c0; ">return</span>(
 			<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">h1</span><span style="color:#808073; ">></span>Hello, World!<span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">h1</span><span style="color:#808073; ">></span>
 		);
@@ -300,7 +300,7 @@ npm start
 									<pre style="margin: 0.5rem;">
 										<code>
 <span style="color:#6b9955; ">// ... остальной код ...</span>
-	<span style="color:#dcdcaa">render</span>() {
+	<span style="color:#dcdcaa; ">render</span>() {
 		<span style="color:#c586c0; ">return</span>(
 			<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">div</span><span style="color:#808073; ">></span>
 				<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">h1</span><span style="color:#808073; ">></span>Hello, World!<span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">h1</span><span style="color:#808073; ">></span>
@@ -322,11 +322,11 @@ npm start
 								<div class="frame">
 									<pre style="margin: 0.5rem;">
 										<code>
-<span style="color:#c586c0; ">import</span><span style="color: #9cdcfe "> React</span><span style="color:#c586c0; "> from </span><span style="color:#ce915b; ">"react"</span>;
+<span style="color:#c586c0; ">import</span><span style="color: #9cdcfe; "> React</span><span style="color:#c586c0; "> from </span><span style="color:#ce915b; ">"react"</span>;
 
 
 <span style="color:#358bd6; ">class</span><span style="color:#4ec9b0; "> Info </span><span style="color:#358bd6; ">extends</span><span style="color:#4ec9b0; "> React</span>.<span style="color:#4ec9b0; ">Component</span>{
-	<span style="color:#dcdcaa">render</span>() {
+	<span style="color:#dcdcaa; ">render</span>() {
 		<span style="color:#c586c0; ">return</span>(
 			<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">div</span><span style="color:#808073; ">></span>
 				<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">h2</span><span style="color:#808073; ">></span>Погода ➯<span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">h2</span><span style="color:#808073; ">></span>
@@ -343,7 +343,7 @@ npm start
 								<div class="frame">
 									<pre style="margin: 0.5rem;">
 										<code>
-<span style="color:#c586c0; ">import</span><span style="color: #9cdcfe "> Info</span><span style="color:#c586c0; "> from </span><span style="color:#ce915b; ">"./components/info"</span>;											
+<span style="color:#c586c0; ">import</span><span style="color: #9cdcfe; "> Info</span><span style="color:#c586c0; "> from </span><span style="color:#ce915b; ">"./components/info"</span>;											
 										</code></pre>
 								</div>
 								<p>Чтобы информация выводилась на экран, добавляем Info в рендер:</p>
@@ -351,7 +351,7 @@ npm start
 									<pre style="margin: 0.5rem;">
 										<code>
 <span style="color:#6b9955; ">// ... остальной код ...</span>
-	<span style="color:#dcdcaa">render</span>() {
+	<span style="color:#dcdcaa; ">render</span>() {
 		<span style="color:#c586c0; ">return</span>(
 			<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">div</span><span style="color:#808073; ">></span>
 				<span style="color:#808073; ">&lt;</span><span style="color:#4ec9b0; ">Info </span><span style="color:#808073; ">/></span>
@@ -362,7 +362,353 @@ npm start
 										</code></pre>
 								</div>
 								<p>Теперь наше приложение отображает основную информацию о своём предназначении!</p>
-								<p><img src="./images/app_info.png" style="width: 1320px; height: 743px; margin: 25px -30px;"></p>
+								<p><img src="./images/app_info.png" style="width: 1260px; height: 709px; margin: 25px 0;"></p>
+							</li>
+							<li>
+								<h1 class="app__subtitle">Работа с API</h1>
+								<p>Для начала создадим файл form.js в папке components и напишем там то же самое, что и в компоненте Info (заменяя все info на form). Далее создаём файл weather.js и проделываем аналогичные действия. Затем импортируем эти компоненты в наше приложение:</p>
+								<div class="frame">
+									<pre style="margin: 0.5rem;">
+										<code>
+<span style="color:#c586c0; ">import</span><span style="color: #9cdcfe; "> Form</span><span style="color:#c586c0; "> from </span><span style="color:#ce915b; ">"./components/form"</span>;
+<span style="color:#c586c0; ">import</span><span style="color: #9cdcfe; "> Weather</span><span style="color:#c586c0; "> from </span><span style="color:#ce915b; ">"./components/weather"</span>;											
+										</code></pre>
+								</div>
+								<p>Их также необходимо добавить в рендер:</p>
+								<div class="frame">
+									<pre style="margin: 0.5rem;">
+										<code>
+<span style="color:#6b9955; ">// ... остальной код ...</span>
+	<span style="color:#dcdcaa; ">render</span>() {
+		<span style="color:#c586c0; ">return</span>(
+			<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">div</span><span style="color:#808073; ">></span>
+				<span style="color:#808073; ">&lt;</span><span style="color:#4ec9b0; ">Info </span><span style="color:#808073; ">/></span>
+				<span style="color:#808073; ">&lt;</span><span style="color:#4ec9b0; ">Form </span><span style="color:#808073; ">/></span>
+				<span style="color:#808073; ">&lt;</span><span style="color:#4ec9b0; ">Weather </span><span style="color:#808073; ">/></span>
+			<span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">div</span><span style="color:#808073; ">></span>
+		);
+	}
+}
+										</code></pre>
+								</div>
+								<p>Теперь переходим к работе с самим погодным API. Заходим на сайт <span class="app__links"><a href="https://openweathermap.org/" target="_block">Openweathermap</a></span> и регестрируемся. После регистрации зайдите в раздел API keys и скопируйте свой API ключ, а затем вставьте его в сой проект. Для этого в App.js создадим новую константу:</p>
+								<div class="frame">
+									<pre style="margin: 0.5rem;">
+										<code>
+<span style="color:#358bd6; ">const</span><span style="color:#4fc1ff; "> APIkey </span>= <span style="color:#ce915b; ">"(ваш ключ)"</span>;
+										</code></pre>
+								</div>
+								<p>Возвращаемся на сайт и в меню наверху страницы переходим в пункт "API". Там мы выбираем "5 Day / 3 Hour Forecast" и нажимаем API doc, а затем копируем первую ссылку в меню API call. Благодаря ей мы сможем получать прогноз погоды на следующие 5 дней.</p>
+								<p>Далее в компонент App добавляем новую функцию, с помощью которого мы будем получать информацию о погоде, обращаясть к ссылке, которую мы получили шагом ранее:</p>
+								<div class="frame">
+									<pre style="margin: 0.5rem;">
+										<code>
+<span style="color:#dcdcaa; ">handleSubmit</span> = <span style="color: #358bd6; ">async </span>(<span style="color: #9cdcfe; ">values</span>) <span style="color: #358bd6; ">=> </span>{
+
+}
+										</code></pre>
+								</div>
+								<p><code class="code">Async</code> позволяет получать данные ассинхронно, то есть не перезагружая страницу. <code class="code">Values</code> - это значения, с которыми будет работать наша функция.</p>
+								<p>Внутри новой функции присваиваем значение <code class="code">values</code> городу, название которого введёт пользователь.</p>
+								<div class="frame">
+									<pre style="margin: 0.5rem;">
+										<code>
+<span style="color:#358bd6; ">const</span> {<span style="color:#4fc1ff; "> city </span>} = <span style="color: #9cdcfe; ">values</span>;
+										</code></pre>
+								</div>
+								<p>Для поддержки нашим приложением ввода как русского, так и английского языка, создадим элемент <code class="code">lang</code>:</p>
+								<div class="frame">
+									<pre style="margin: 0.5rem;">
+										<code>
+<span style="color:#358bd6; ">const</span><span style="color:#4fc1ff; "> lang </span>= <span style="color:#d16969; ">/</span><span style="color:#dcdcaa; ">^</span><span style="color:#ce915b; ">[</span><span style="color:#d16969; ">a-z-</span><span style="color:#ce915b; ">]</span><span style="color:#d7ba7d; ">+</span><span style="color:#dcdcaa; ">$</span><span style="color:#d16969; ">/</span><span style="color:#358bd6; ">i</span>.<span style="color:#dcdcaa; ">test</span>(<span style="color:#4fc1ff; ">city</span>) ? <span style="color:#ce915b; ">"en"</span> : <span style="color:#ce915b; ">"ru"</span>;
+										</code></pre>
+								</div>
+								<p>Теперь наконец создадим ссылку. Для этого добавим новую константу apiURL, вставляем в неё ссылку и немного её корректируем для возможности смены языка и введения разных городов:</p>
+								<div class="frame">
+									<pre style="margin: 0.5rem;">
+										<code>
+<span style="color:#358bd6; ">const</span><span style="color:#4fc1ff; "> apiURL </span>=<span style="color:#c586c0; "> await </span><span style="color:#dcdcaa; ">fetch</span>(<span style="color:#ce915b; ">`http://api.openweathermap.org/data/2.5/forecast?q=<span style="color:#358bd6; ">${</span><span style="color:#4fc1ff; ">city</span><span style="color:#358bd6; ">}</span>&appid=<span style="color:#358bd6; ">${</span><span style="color:#4fc1ff; ">APIkey</span><span style="color:#358bd6; ">}</span>&units=metric&lang=<span style="color:#358bd6; ">${</span><span style="color:#4fc1ff; ">lang</span><span style="color:#358bd6; ">}</span>`</span>);
+										</code></pre>
+								</div>
+								<p><code class="code">Await</code> мы используем, так как обращаемся к ссылке ассинхронно, а метод <code class="code">fetch()</code> позволяет прочитать ссылку и получить из неё данные.</p>
+								<p>Далее нам нужно преобразовать полученные данные в формат json:</p>
+								<div class="frame">
+									<pre style="margin: 0.5rem;">
+										<code>
+<span style="color:#358bd6; ">const</span><span style="color:#4fc1ff; "> data </span>=<span style="color:#c586c0; "> await </span><span style="color:#4fc1ff; ">apiURL</span>.<span style="color:#dcdcaa; ">json</span>();
+										</code></pre>
+								</div>
+								<p>ДЛя удобства будем выводить полученные данные в консоль:</p>
+								<div class="frame">
+									<pre style="margin: 0.5rem;">
+										<code>
+<span style="color: #9cdcfe; ">console</span>.<span style="color:#dcdcaa; ">log</span>(<span style="color:#4fc1ff; ">data</span>);
+										</code></pre>
+								</div>
+							</li>
+							<li>
+								<h1 class="app__subtitle">Создание формы и работа со свойствами</h1>
+								<p>Для начала перейдём в компонент Form и добавим туда пару функций:</p>
+								<div class="frame">
+									<pre style="margin: 0.5rem;">
+										<code>
+<span style="color:#dcdcaa; ">handleChange</span> = (<span style="color: #9cdcfe; ">e</span>) <span style="color:#358bd6; ">=></span> {
+	<span style="color:#358bd6; ">this</span>.<span style="color:#dcdcaa; ">setState</span>({ <span style="color: #9cdcfe; ">city</span>: <span style="color: #9cdcfe; ">e</span>.<span style="color: #9cdcfe; ">target</span>.<span style="color: #9cdcfe; ">value</span> });
+}
+
+<span style="color:#dcdcaa; ">handleSubmit</span> = (<span style="color: #9cdcfe; ">e</span>) <span style="color:#358bd6; ">=></span> {
+	<span style="color: #9cdcfe; ">e</span>.<span style="color:#dcdcaa; ">preventDefault</span>();
+	<span style="color:#358bd6; ">this</span>.<span style="color:#4fc1ff; ">props</span>.<span style="color:#dcdcaa; ">onSubmit</span>({ <span style="color: #9cdcfe; ">city</span>: <span style="color:#358bd6; ">this</span>.<span style="color: #9cdcfe; ">state</span>.<span style="color: #9cdcfe; ">city</span> });
+}
+										</code></pre>
+								</div>
+								<p>Первая функция подставляет вместо <code class="code">${city}</code> введённый город, а вторая принимает информацию в компонент Form не обновляя страницу.</p>
+								<p>А сейчас мы создадим саму форму, куда пользователь будет вводить название нужного ему города. Для этого внутри метода <code class="code">return()</code> создадим тег <code class="code">&lt;form></code>, а внутри него сделаем поле для ввода и кнопку "Найти":</p>
+								<div class="frame">
+									<pre style="margin: 0.5rem;">
+										<code>
+<span style="color:#6b9955; ">// ... остальной код ...</span>
+	<span style="color:#dcdcaa; ">render</span>() {
+		<span style="color:#c586c0; ">return</span>(
+			<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">form </span><span style="color: #9cdcfe; ">onSubmit</span>=<span style="color:#358bd6; ">{this</span>.<span style="color:#dcdcaa; ">handleSubmit</span><span style="color:#358bd6; ">}</span><span style="color:#808073; ">></span>
+				<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">input</span>
+					<span style="color: #9cdcfe; ">type</span>=<span style="color:#ce915b; ">"text"</span>
+					<span style="color: #9cdcfe; ">name</span>=<span style="color:#ce915b; ">"city"</span>
+					<span style="color: #9cdcfe; ">value</span>=<span style="color:#358bd6; ">{this</span>.<span style="color: #9cdcfe; ">state</span>.<span style="color: #9cdcfe; ">city</span><span style="color:#358bd6; ">}</span>
+					<span style="color: #9cdcfe; ">placeholder</span>=<span style="color:#ce915b; ">"Город"</span>
+					<span style="color: #9cdcfe; ">onChange</span>=<span style="color:#358bd6; ">{this</span>.<span style="color:#dcdcaa; ">handleChange</span><span style="color:#358bd6; ">}</span>
+				<span style="color:#808073; ">/></span>
+				<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">button </span><span style="color: #9cdcfe; ">type</span>=<span style="color:#ce915b; ">"submit"</span> <span style="color: #9cdcfe; ">disabled</span>=<span style="color:#358bd6; ">{this</span>.<span style="color: #9cdcfe; ">state</span>.<span style="color: #9cdcfe; ">city</span> === <span style="color:#ce915b; ">""</span><span style="color:#358bd6; ">}</span><span style="color:#808073; ">></span>Найти<span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">button</span><span style="color:#808073; ">></span>
+			<span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">form</span><span style="color:#808073; ">></span>
+		);
+	}
+}
+										</code></pre>
+								</div>
+								<p>Теперь остаётся добавить передачу информации из компонента App в компонент Form. Для этого возвращаемся в файл app.js и в рендере Form добавляем передачу данных:</p>
+								<div class="frame">
+									<pre style="margin: 0.5rem;">
+										<code>
+<span style="color:#808073; ">&lt;</span><span style="color:#4ec9b0; ">Form </span><span style="color: #9cdcfe; ">onSubmit</span>=<span style="color:#358bd6; ">{this</span>.<span style="color:#dcdcaa; ">handleSubmit</span><span style="color:#358bd6; ">}</span><span style="color:#808073; "> /></span>
+										</code></pre>
+								</div>
+							</li>
+							<li>
+								<h1 class="app__subtitle">Вывод информации в компоненте</h1>
+								<p>После URL запроса мы получаем данные, но нам нужно их где-то хранить и как-то передавать. Для этого существуют объекты <code class="code">state</code>. Для создания таких объектов в компоненте App перед основной функцией напишем:</p>
+								<div class="frame">
+									<pre style="margin: 0.5rem;">
+										<code>
+<span style="color: #9cdcfe; ">state</span> = {
+
+}
+										</code></pre>
+								</div>
+								<p>Внутрь него добавим массив, в который будем загружать полученные данные, а также переменную error на случай ошибки:</p>
+								<div class="frame">
+									<pre style="margin: 0.5rem;">
+										<code>
+<span style="color: #9cdcfe; ">state</span> = {
+	<span style="color: #9cdcfe; ">list</span>: [],
+	<span style="color: #9cdcfe; ">error</span>: <span style="color:#358bd6; ">null</span>,
+}
+										</code></pre>
+								</div>
+								<p>Также присвоим изначальное состояние объекту <code class="code">city</code> в компоненте Form:</p>
+								<div class="frame">
+									<pre style="margin: 0.5rem;">
+										<code>
+<span style="color: #9cdcfe; ">state</span> = {
+	<span style="color: #9cdcfe; ">city</span>: <span style="color:#ce915b; ">""</span>,
+}
+										</code></pre>
+								</div>
+								<p>Возвращаемся обратно к функции и после команды вывода информации в консоль добавляем проверку правильности ввода и смену значения <code class="code">state</code> в случае успеха:</p>
+								<div class="frame">
+									<pre style="margin: 0.5rem;">
+										<code>
+<span style="color:#6b9955; ">// ... остальной код ...</span>
+	<span style="color:#c586c0; ">if</span> (<span style="color:#4fc1ff; ">data</span>.<span style="color: #9cdcfe; ">cod</span> === <span style="color:#ce915b; ">"200"</span>) {
+		<span style="color:#358bd6; ">this</span>.<span style="color:#dcdcaa; ">setState</span>({
+			<span style="color: #9cdcfe; ">list</span>: <span style="color:#4fc1ff; ">data</span>.<span style="color: #9cdcfe; ">list</span>.<span style="color:#dcdcaa; ">filter</span>(({ <span style="color: #9cdcfe; ">dt</span> }) <span style="color:#358bd6; ">=> new</span> <span style="color:#4ec9b0; ">Date</span>(<span style="color: #9cdcfe; ">dt</span> * <span style="color: #b5cea8; ">1000</span>).<span style="color:#dcdcaa; ">getHours</span>() === <span style="color: #b5cea8; ">12</span>),
+			<span style="color: #9cdcfe; ">error</span>: <span style="color:#358bd6; ">null</span>
+		});
+	} <span style="color:#c586c0; ">else</span> {
+		<span style="color:#358bd6; ">this</span>.<span style="color:#dcdcaa; ">setState</span>({
+			<span style="color: #9cdcfe; ">list</span>: [],
+			<span style="color: #9cdcfe; ">error</span>: <span style="color:#ce915b; ">"Такого города не существует"</span>
+		})
+	}
+}
+										</code></pre>
+								</div>
+								<p>Я также добавил фильтр по времени, чтобы выводиласть погода в 12 часов каждого дня (иначе страница бы становилась слишком большого размера).</p>
+								<p>Далее нам нужно перевести полученные данные в компонент Weather для их последующей обработки, а также добавить вывод ошибки и итоговых данных о погоде:</p>
+								<div class="frame">
+									<pre style="margin: 0.5rem;">
+										<code>
+<span style="color:#358bd6; ">{this</span>.<span style="color: #9cdcfe; ">state</span>.<span style="color: #9cdcfe; ">error</span> && <span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">p</span> <span style="color: #9cdcfe; ">className</span>=<span style="color:#ce915b; ">"error"</span><span style="color:#808073; ">></span><span style="color:#358bd6; ">{this</span>.<span style="color: #9cdcfe; ">state</span>.<span style="color: #9cdcfe; ">error</span><span style="color:#358bd6; ">}</span><span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">p</span><span style="color:#808073; ">></span><span style="color:#358bd6; ">}</span>
+<span style="color:#358bd6; ">{this</span>.<span style="color: #9cdcfe; ">state</span>.<span style="color: #9cdcfe; ">list</span>.<span style="color:#dcdcaa; ">map</span>(<span style="color: #9cdcfe; ">data</span><span style="color:#358bd6; "> => </span>(
+	<span style="color:#808073; ">&lt;</span><span style="color:#4ec9b0; ">Weather </span><span style="color: #9cdcfe; ">key</span>=<span style="color:#358bd6; ">{</span><span style="color: #9cdcfe; ">data</span>.<span style="color: #9cdcfe; ">dt</span><span style="color:#358bd6; ">}</span> <span style="color: #9cdcfe; ">data</span> = <span style="color:#358bd6; ">{</span><span style="color: #9cdcfe; ">data</span><span style="color:#358bd6; ">}</span><span style="color:#808073; "> /></span>
+))<span style="color:#358bd6; ">}</span>
+										</code></pre>
+								</div>
+								<p>Теперь перемещаемся в компонент Weather и начинаем работать с полученными данными. Для начала добавляем объекту <code class="code">data</code> значение <code class="code">props</code>, а также создаём объект <code class="code">Date</code> для вывода даты:</p>
+								<div class="frame">
+									<pre style="margin: 0.5rem;">
+										<code>
+<span style="color:#358bd6; ">const</span> { <span style="color:#4fc1ff; ">data</span> } = <span style="color: #9cdcfe; ">props</span>;
+
+<span style="color:#358bd6; ">const</span><span style="color:#4fc1ff; "> date</span> = <span style="color:#358bd6; ">new</span><span style="color:#4ec9b0; "> Date</span>(<span style="color:#4fc1ff; ">data</span>.<span style="color: #9cdcfe; ">dt</span> * <span style="color: #b5cea8; ">1000</span>);
+										</code></pre>
+								</div>
+								<p>Далее начинаем переводить данные в более понятные величины:</p>
+								<div class="frame">
+									<pre style="margin: 0.5rem;">
+										<code>
+<span style="color:#c586c0; ">if</span>(<span style="color:#4fc1ff; ">data</span>.<span style="color: #9cdcfe; ">clouds</span>.<span style="color: #9cdcfe; ">all</span>&lt;=<span style="color: #b5cea8; ">25</span>) {
+	<span style="color:#358bd6; ">var</span> <span style="color: #9cdcfe; ">clouds1</span> = <span style="color:#ce915b; ">"Ясно"</span>;
+}  
+<span style="color:#c586c0; ">if</span>(<span style="color:#4fc1ff; ">data</span>.<span style="color: #9cdcfe; ">clouds</span>.<span style="color: #9cdcfe; ">all</span>><span style="color: #b5cea8; ">25</span> && <span style="color:#4fc1ff; ">data</span>.<span style="color: #9cdcfe; ">clouds</span>.<span style="color: #9cdcfe; ">all</span>&lt;=<span style="color: #b5cea8; ">50</span>) {
+	<span style="color: #9cdcfe; ">clouds1</span> = <span style="color:#ce915b; ">"Переменная облачность"</span>;
+}  
+<span style="color:#c586c0; ">if</span>(<span style="color:#4fc1ff; ">data</span>.<span style="color: #9cdcfe; ">clouds</span>.<span style="color: #9cdcfe; ">all</span>><span style="color: #b5cea8; ">50</span> && <span style="color:#4fc1ff; ">data</span>.<span style="color: #9cdcfe; ">clouds</span>.<span style="color: #9cdcfe; ">all</span>&lt;=<span style="color: #b5cea8; ">75</span>) {
+	<span style="color: #9cdcfe; ">clouds1</span> = <span style="color:#ce915b; ">"Облачно"</span>;
+}  
+<span style="color:#c586c0; ">if</span>(<span style="color:#4fc1ff; ">data</span>.<span style="color: #9cdcfe; ">clouds</span>.<span style="color: #9cdcfe; ">all</span>><span style="color: #b5cea8; ">75</span>) {
+	<span style="color: #9cdcfe; ">clouds1</span> = <span style="color:#ce915b; ">"Пасмурно"</span>;
+}  
+<span style="color:#c586c0; ">if</span>(<span style="color:#4fc1ff; ">data</span>.<span style="color: #9cdcfe; ">wind</span>.<span style="color: #9cdcfe; ">deg</span>><span style="color: #b5cea8; ">337.5</span> && <span style="color:#4fc1ff; ">data</span>.<span style="color: #9cdcfe; ">wind</span>.<span style="color: #9cdcfe; ">deg</span>&lt;=<span style="color: #b5cea8; ">22.5</span>) {
+	<span style="color:#358bd6; ">var</span> <span style="color: #9cdcfe; ">wind</span> = <span style="color:#ce915b; ">"С"</span>;
+}  
+<span style="color:#c586c0; ">if</span>(<span style="color:#4fc1ff; ">data</span>.<span style="color: #9cdcfe; ">wind</span>.<span style="color: #9cdcfe; ">deg</span>><span style="color: #b5cea8; ">22.5</span> && <span style="color:#4fc1ff; ">data</span>.<span style="color: #9cdcfe; ">wind</span>.<span style="color: #9cdcfe; ">deg</span>&lt;=<span style="color: #b5cea8; ">67.5</span>) {
+	<span style="color: #9cdcfe; ">wind</span> = <span style="color:#ce915b; ">"СВ"</span>;
+}  
+<span style="color:#c586c0; ">if</span>(<span style="color:#4fc1ff; ">data</span>.<span style="color: #9cdcfe; ">wind</span>.<span style="color: #9cdcfe; ">deg</span>><span style="color: #b5cea8; ">67.5</span> && <span style="color:#4fc1ff; ">data</span>.<span style="color: #9cdcfe; ">wind</span>.<span style="color: #9cdcfe; ">deg</span>&lt;=<span style="color: #b5cea8; ">112.5</span>) {
+	<span style="color: #9cdcfe; ">wind</span> = <span style="color:#ce915b; ">"В"</span>;
+}  
+<span style="color:#c586c0; ">if</span>(<span style="color:#4fc1ff; ">data</span>.<span style="color: #9cdcfe; ">wind</span>.<span style="color: #9cdcfe; ">deg</span>><span style="color: #b5cea8; ">112.5</span> && <span style="color:#4fc1ff; ">data</span>.<span style="color: #9cdcfe; ">wind</span>.<span style="color: #9cdcfe; ">deg</span>&lt;=<span style="color: #b5cea8; ">157.5</span>) {
+	<span style="color: #9cdcfe; ">wind</span> = <span style="color:#ce915b; ">"ЮВ"</span>;
+}  
+<span style="color:#c586c0; ">if</span>(<span style="color:#4fc1ff; ">data</span>.<span style="color: #9cdcfe; ">wind</span>.<span style="color: #9cdcfe; ">deg</span>><span style="color: #b5cea8; ">157.5</span> && <span style="color:#4fc1ff; ">data</span>.<span style="color: #9cdcfe; ">wind</span>.<span style="color: #9cdcfe; ">deg</span>&lt;=<span style="color: #b5cea8; ">202.5</span>) {
+	<span style="color: #9cdcfe; ">wind</span> = <span style="color:#ce915b; ">"Ю"</span>;
+}  
+<span style="color:#c586c0; ">if</span>(<span style="color:#4fc1ff; ">data</span>.<span style="color: #9cdcfe; ">wind</span>.<span style="color: #9cdcfe; ">deg</span>><span style="color: #b5cea8; ">202.5</span> && <span style="color:#4fc1ff; ">data</span>.<span style="color: #9cdcfe; ">wind</span>.<span style="color: #9cdcfe; ">deg</span>&lt;=<span style="color: #b5cea8; ">247.5</span>) {
+	<span style="color: #9cdcfe; ">wind</span> = <span style="color:#ce915b; ">"ЮЗ"</span>;
+}  
+<span style="color:#c586c0; ">if</span>(<span style="color:#4fc1ff; ">data</span>.<span style="color: #9cdcfe; ">wind</span>.<span style="color: #9cdcfe; ">deg</span>><span style="color: #b5cea8; ">247.5</span> && <span style="color:#4fc1ff; ">data</span>.<span style="color: #9cdcfe; ">wind</span>.<span style="color: #9cdcfe; ">deg</span>&lt;=<span style="color: #b5cea8; ">292.5</span>) {
+	<span style="color: #9cdcfe; ">wind</span> = <span style="color:#ce915b; ">"З"</span>;
+}  
+<span style="color:#c586c0; ">if</span>(<span style="color:#4fc1ff; ">data</span>.<span style="color: #9cdcfe; ">wind</span>.<span style="color: #9cdcfe; ">deg</span>><span style="color: #b5cea8; ">292.5</span> && <span style="color:#4fc1ff; ">data</span>.<span style="color: #9cdcfe; ">wind</span>.<span style="color: #9cdcfe; ">deg</span>&lt;=<span style="color: #b5cea8; ">337.5</span>) {
+	<span style="color: #9cdcfe; ">wind</span> = <span style="color:#ce915b; ">"СЗ"</span>;
+}
+										</code></pre>
+								</div>
+								<p>Теперь создаём новые объекты и присваиваем им обработанные значения:</p>
+								<div class="frame">
+									<pre style="margin: 0.5rem;">
+										<code>
+<span style="color:#358bd6; ">const</span><span style="color:#4fc1ff; "> temp</span> = <span style="color:#4fc1ff; ">data</span>.<span style="color: #9cdcfe; ">main</span>.<span style="color: #9cdcfe; ">temp</span>;
+<span style="color:#358bd6; ">const</span><span style="color:#4fc1ff; "> clouds</span> = <span style="color: #9cdcfe; ">clouds1</span>;
+<span style="color:#358bd6; ">const</span><span style="color:#4fc1ff; "> pressure</span> = <span style="color: #9cdcfe; ">Math</span>.<span style="color:#dcdcaa; ">trunc</span>((<span style="color:#4fc1ff; ">data</span>.<span style="color: #9cdcfe; ">main</span>.<span style="color: #9cdcfe; ">pressure</span>)*<span style="color: #b5cea8; ">0.75006375541921</span>);
+<span style="color:#358bd6; ">const</span><span style="color:#4fc1ff; "> windd</span> = <span style="color: #9cdcfe; ">wind</span>;
+<span style="color:#358bd6; ">const</span><span style="color:#4fc1ff; "> winds</span> = <span style="color:#4fc1ff; ">data</span>.<span style="color: #9cdcfe; ">wind</span>.<span style="color: #9cdcfe; ">speed</span>;
+										</code></pre>
+								</div>
+								<p>Теперь наши данные готовы к выводу на экран. Давайте добавим их в <code class="code">return()</code>:</p>
+								<div class="frame">
+									<pre style="margin: 0.5rem;">
+										<code>
+<span style="color:#6b9955; ">// ... остальной код ...</span>
+	<span style="color:#c586c0; ">return</span> (
+		<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">div</span><span style="color:#808073; ">></span>
+			<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">p</span><span style="color:#808073; ">></span><span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">b</span><span style="color:#808073; ">></span><span style="color:#358bd6; ">{</span><span style="color:#4fc1ff; ">date</span>.<span style="color:#dcdcaa; ">toLocaleDateString</span>()<span style="color:#358bd6; ">}</span><span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">b</span><span style="color:#808073; ">></span><span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">p</span><span style="color:#808073; ">></span>
+				<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">div</span><span style="color:#808073; ">></span>
+					<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">p</span><span style="color:#808073; ">></span>Температура: <span style="color:#358bd6; ">{</span><span style="color:#4fc1ff; ">temp</span><span style="color:#358bd6; ">}</span>°C<span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">p</span><span style="color:#808073; ">></span>
+					<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">p</span><span style="color:#808073; ">></span>Облачность: <span style="color:#358bd6; ">{</span><span style="color:#4fc1ff; ">clouds</span><span style="color:#358bd6; ">}</span><span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">p</span><span style="color:#808073; ">></span>
+					<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">p</span><span style="color:#808073; ">></span>Давление: <span style="color:#358bd6; ">{</span><span style="color:#4fc1ff; ">pressure</span><span style="color:#358bd6; ">}</span> мм рт. ст.<span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">p</span><span style="color:#808073; ">></span>
+					<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">p</span><span style="color:#808073; ">></span>Ветер: <span style="color:#358bd6; ">{</span><span style="color:#4fc1ff; ">windd</span><span style="color:#358bd6; ">}</span>, <span style="color:#358bd6; ">{</span><span style="color:#4fc1ff; ">winds</span><span style="color:#358bd6; ">}</span> м/с<span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">p</span><span style="color:#808073; ">></span>
+				<span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">div</span><span style="color:#808073; ">></span>
+			<span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">div</span><span style="color:#808073; ">></span>
+		<span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">div</span><span style="color:#808073; ">></span>
+	);
+}
+										</code></pre>
+								</div>
+								<p>Теперь наше приложение полностью функционирует!</p>
+								<p><img src="./images/app_work.png" style="width: 1260px; height: 709px; margin: 25px 0;"></p>
+							</li>
+							<li>
+								<h1 class="app__subtitle">Добавление стилей</h1>
+								<p>Наше приложение уже работает, но выглядит как-то не очень. Время это исправить!</p>
+								<p>Откроем командную строку (cmd) и установим <code class="code">bootstrap</code>:</p>
+								<div class="frame">
+									<pre style="margin: 0.5rem;">
+										<code>
+npm install bootstrap --save
+										</code></pre>
+								</div>
+								<p>После установки в папке нашего проекта по адресу node_modules\bootstrap\dist\css мы найдём файл bootstrap.min.css. Для его подключения мы заходим в файл index.js и пишем:</p>
+								<div class="frame">
+									<pre style="margin: 0.5rem;">
+										<code>
+<span style="color:#c586c0; ">import </span><span style="color:#ce915b; ">'bootstrap/dist/css/bootstrap.min.css'</span>;
+										</code></pre>
+								</div>
+								<p>Теперь начинаем добавлять свои собственные стили. У нас их будет целых 3: для дня, ночи, а также утра и вечера.</p>
+								<p><span class="app__links"><a href="https://github.com/EgorX2000/react_styles/archive/refs/heads/master.zip" target="_self">Скачать мои стили можно тут.</a></span></p>
+								<p>Извлекаем файлы из архива и переносим в папку src нашего проекта. Затем открываем файл index.js и создаём объект <code class="code">Date</code>, а пото импортируем каждый стиль относительно нужного времени:</p>
+								<div class="frame">
+									<pre style="margin: 0.5rem;">
+										<code>
+<span style="color:#358bd6; ">var</span><span style="color:#4fc1ff; "> date</span> = <span style="color:#358bd6; ">new</span><span style="color:#4ec9b0; "> Date</span>();
+<span style="color:#358bd6; ">var</span><span style="color:#4fc1ff; "> hours</span> = <span style="color:#4fc1ff; ">date</span>.<span style="color:#dcdcaa; ">getHours</span>();
+<span style="color:#c586c0; ">if</span> (<span style="color:#4fc1ff; ">hours</span> > <span style="color: #b5cea8; ">8</span> && <span style="color:#4fc1ff; ">hours</span> &lt;= <span style="color: #b5cea8; ">16</span>) {
+	<span style="color:#358bd6; ">import</span>(<span style="color:#ce915b; ">"./Day.css"</span>);
+}
+<span style="color:#c586c0; ">else if</span> (<span style="color:#4fc1ff; ">hours</span> > <span style="color: #b5cea8; ">4</span> && <span style="color:#4fc1ff; ">hours</span> &lt;= <span style="color: #b5cea8; ">8</span>) {
+  <span style="color:#358bd6; ">import</span>(<span style="color:#ce915b; ">"./Sunrise.css"</span>);
+}
+<span style="color:#c586c0; ">else if</span> (<span style="color:#4fc1ff; ">hours</span> > <span style="color: #b5cea8; ">16</span> && <span style="color:#4fc1ff; ">hours</span> &lt;= <span style="color: #b5cea8; ">20</span>) {
+  <span style="color:#358bd6; ">import</span>(<span style="color:#ce915b; ">"./Sunrise.css"</span>);
+}
+<span style="color:#c586c0; ">else</span> {
+  <span style="color:#358bd6; ">import</span>(<span style="color:#ce915b; ">"./Night.css"</span>);
+}
+										</code></pre>
+								</div>
+								<p>Переходим в рендер компонента App и добавляем имена классов:</p>
+								<div class="frame">
+									<pre style="margin: 0.5rem;">
+										<code>
+<span style="color:#6b9955; ">// ... остальной код ...</span>
+	<span style="color:#dcdcaa; ">render</span>() {
+		<span style="color:#c586c0; ">return</span>(
+			<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">div</span><span style="color:#4fc1ff; "> className</span>=<span style="color:#ce915b; ">"wrapper"</span><span style="color:#808073; ">></span>
+				<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">div</span><span style="color:#4fc1ff; "> className</span>=<span style="color:#ce915b; ">"main"</span><span style="color:#808073; ">></span>
+					<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">div</span><span style="color:#4fc1ff; "> className</span>=<span style="color:#ce915b; ">"container"</span><span style="color:#808073; ">></span>
+						<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">div</span><span style="color:#4fc1ff; "> className</span>=<span style="color:#ce915b; ">"row"</span><span style="color:#808073; ">></span>
+							<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">div</span><span style="color:#4fc1ff; "> className</span>=<span style="color:#ce915b; ">"col-sm-5 info"</span><span style="color:#808073; ">></span>
+								<span style="color:#808073; ">&lt;</span><span style="color:#4ec9b0; ">Info </span><span style="color:#808073; ">/></span>
+							<span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">div</span><span style="color:#808073; ">></span>
+							<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">div</span><span style="color:#4fc1ff; "> className</span>=<span style="color:#ce915b; ">"col-sm-7 form"</span><span style="color:#808073; ">></span>
+								<span style="color:#808073; ">&lt;</span><span style="color:#4ec9b0; ">Form </span><span style="color: #9cdcfe; ">onSubmit</span>=<span style="color:#358bd6; ">{this</span>.<span style="color:#dcdcaa; ">handleSubmit</span><span style="color:#358bd6; ">}</span><span style="color:#808073; "> /></span>
+								<span style="color:#358bd6; ">{this</span>.<span style="color: #9cdcfe; ">state</span>.<span style="color: #9cdcfe; ">error</span> && <span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">p</span> <span style="color: #9cdcfe; ">className</span>=<span style="color:#ce915b; ">"error"</span><span style="color:#808073; ">></span><span style="color:#358bd6; ">{this</span>.<span style="color: #9cdcfe; ">state</span>.<span style="color: #9cdcfe; ">error</span><span style="color:#358bd6; ">}</span><span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">p</span><span style="color:#808073; ">></span><span style="color:#358bd6; ">}</span>
+								<span style="color:#358bd6; ">{this</span>.<span style="color: #9cdcfe; ">state</span>.<span style="color: #9cdcfe; ">list</span>.<span style="color:#dcdcaa; ">map</span>(<span style="color: #9cdcfe; ">data</span><span style="color:#358bd6; "> => </span>(
+									<span style="color:#808073; ">&lt;</span><span style="color:#4ec9b0; ">Weather </span><span style="color: #9cdcfe; ">key</span>=<span style="color:#358bd6; ">{</span><span style="color: #9cdcfe; ">data</span>.<span style="color: #9cdcfe; ">dt</span><span style="color:#358bd6; ">}</span> <span style="color: #9cdcfe; ">data</span> = <span style="color:#358bd6; ">{</span><span style="color: #9cdcfe; ">data</span><span style="color:#358bd6; ">}</span><span style="color:#808073; "> /></span>
+								))<span style="color:#358bd6; ">}</span>
+							<span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">div</span><span style="color:#808073; ">></span>
+						<span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">div</span><span style="color:#808073; ">></span>
+					<span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">div</span><span style="color:#808073; ">></span>
+				<span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">div</span><span style="color:#808073; ">></span>
+			<span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">div</span><span style="color:#808073; ">></span>
+		);
+	}
+}
+										</code></pre>
+								</div>
+								<p><b>Наше приложение готово!</b> Оно не только показывает нужную информацию, но и привлекательно выглядит.</p>
+								<p><img src="./images/app_styles.png" style="width: 1260px; height: 709px; margin: 25px 0;"></p>
 							</li>
 						</ul>
 					</div>
@@ -388,6 +734,18 @@ npm start
 								Приложение
 							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="conc">
+				<div class="container">
+					<div class="conc__text">
+						<h1 class="conc__title">Заключение</h1>
+						<p>По итогам гайда мы научились основам работы с React но и создали полноценное приложение.</p>
+						<p><span class="conc__links"><a href="https://egorx2000.github.io/react_app/" target="_block">Посмотреть моё приложение можно тут.</a></p>
+						<p><span class="conc__links"><a href="https://github.com/EgorX2000/react_app" target="_block">А взглянуть на код здесь.</a></p>
+						<p><b>Надеюсь, что вам было интересно!</b></p>
 					</div>
 				</div>
 			</div>
