@@ -429,7 +429,7 @@ npm start
 								<div class="frame">
 									<pre style="margin: 0.5rem;">
 										<code>
-<span style="color:#358bd6; ">const</span><span style="color:#4fc1ff; "> apiURL </span>=<span style="color:#c586c0; "> await </span><span style="color:#dcdcaa; ">fetch</span>(<span style="color:#ce915b; ">`http://api.openweathermap.org/data/2.5/forecast?q=<span style="color:#358bd6; ">${</span><span style="color:#4fc1ff; ">city</span><span style="color:#358bd6; ">}</span>&appid=<span style="color:#358bd6; ">${</span><span style="color:#4fc1ff; ">APIkey</span><span style="color:#358bd6; ">}</span>&units=metric&lang=<span style="color:#358bd6; ">${</span><span style="color:#4fc1ff; ">lang</span><span style="color:#358bd6; ">}</span>`</span>);
+<span style="color:#358bd6; ">const</span><span style="color:#4fc1ff; "> apiURL </span>=<span style="color:#c586c0; "> await </span><span style="color:#dcdcaa; ">fetch</span>(<span style="color:#ce915b; ">`https://api.openweathermap.org/data/2.5/forecast?q=<span style="color:#358bd6; ">${</span><span style="color:#4fc1ff; ">city</span><span style="color:#358bd6; ">}</span>&appid=<span style="color:#358bd6; ">${</span><span style="color:#4fc1ff; ">APIkey</span><span style="color:#358bd6; ">}</span>&units=metric&lang=<span style="color:#358bd6; ">${</span><span style="color:#4fc1ff; ">lang</span><span style="color:#358bd6; ">}</span>`</span>);
 										</code></pre>
 								</div>
 								<p><code class="code">Await</code> мы используем, так как обращаемся к ссылке ассинхронно, а метод <code class="code">fetch()</code> позволяет прочитать ссылку и получить из неё данные.</p>
