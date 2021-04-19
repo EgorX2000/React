@@ -15,10 +15,11 @@ body::-webkit-scrollbar{
 
 body::-webkit-scrollbar-thumb{
     background-color: #61dafb;
+    border-radius: 5px;
 }
 
-body::-webkit-scrollbar-thumb:hover{
-    opacity: 1;
+body::-webkit-scrollbar-track{
+    background-color: #20232a;
 }
 
 .page{
@@ -82,13 +83,14 @@ h1, h2, h3, h4, h5, h6{
 /*Header*/
 
 .header{
-    padding-top: 30px;
+    padding-top: 20px;
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;    
+    z-index: 1000;  
+    background: #20232a;  
 }
 
 .header__inner{
@@ -98,8 +100,15 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .header__logo{
+    margin-bottom: 15px;
     font-size: 30px;
     font-weight: 700;
+
+    cursor: pointer;
+}
+
+.header__logo a{
+    text-decoration: none;
     color: #61dafb;
 
     cursor: pointer;
