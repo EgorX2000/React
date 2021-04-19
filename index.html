@@ -364,7 +364,7 @@ npm start
 										</code></pre>
 								</div>
 								<p>Теперь наше приложение отображает основную информацию о своём предназначении!</p>
-								<p><img src="./images/app_info.png" style="width: 1260px; height: 709px; margin: 25px 0;"></p>
+								<iframe src="https://egorx2000.github.io/react_app_info/" frameborder="1" width="1260px" height="709px"></iframe>
 							</li>
 							<li>
 								<h1 class="app__subtitle">Работа с API</h1>
@@ -638,7 +638,7 @@ npm start
 										</code></pre>
 								</div>
 								<p>Теперь наше приложение полностью функционирует!</p>
-								<p><img src="./images/app_work.png" style="width: 1260px; height: 709px; margin: 25px 0;"></p>
+								<iframe src="https://egorx2000.github.io/react_app_nostyles/" frameborder="1" width="1260px" height="709px"></iframe>
 							</li>
 							<li>
 								<h1 class="app__subtitle">Добавление стилей</h1>
@@ -686,14 +686,14 @@ npm install bootstrap --save
 <span style="color:#6b9955; ">// ... остальной код ...</span>
 	<span style="color:#dcdcaa; ">render</span>() {
 		<span style="color:#c586c0; ">return</span>(
-			<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">div</span><span style="color:#4fc1ff; "> className</span>=<span style="color:#ce915b; ">"wrapper"</span><span style="color:#808073; ">></span>
-				<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">div</span><span style="color:#4fc1ff; "> className</span>=<span style="color:#ce915b; ">"main"</span><span style="color:#808073; ">></span>
-					<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">div</span><span style="color:#4fc1ff; "> className</span>=<span style="color:#ce915b; ">"container"</span><span style="color:#808073; ">></span>
-						<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">div</span><span style="color:#4fc1ff; "> className</span>=<span style="color:#ce915b; ">"row"</span><span style="color:#808073; ">></span>
-							<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">div</span><span style="color:#4fc1ff; "> className</span>=<span style="color:#ce915b; ">"col-sm-5 info"</span><span style="color:#808073; ">></span>
+			<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">div</span><span style="color:#9cdcfe; "> className</span>=<span style="color:#ce915b; ">"wrapper"</span><span style="color:#808073; ">></span>
+				<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">div</span><span style="color:#9cdcfe;; "> className</span>=<span style="color:#ce915b; ">"main"</span><span style="color:#808073; ">></span>
+					<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">div</span><span style="color:#9cdcfe; "> className</span>=<span style="color:#ce915b; ">"container"</span><span style="color:#808073; ">></span>
+						<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">div</span><span style="color:#9cdcfe; "> className</span>=<span style="color:#ce915b; ">"row"</span><span style="color:#808073; ">></span>
+							<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">div</span><span style="color:#9cdcfe; "> className</span>=<span style="color:#ce915b; ">"col-sm-5 info"</span><span style="color:#808073; ">></span>
 								<span style="color:#808073; ">&lt;</span><span style="color:#4ec9b0; ">Info </span><span style="color:#808073; ">/></span>
 							<span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">div</span><span style="color:#808073; ">></span>
-							<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">div</span><span style="color:#4fc1ff; "> className</span>=<span style="color:#ce915b; ">"col-sm-7 form"</span><span style="color:#808073; ">></span>
+							<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">div</span><span style="color:#9cdcfe; "> className</span>=<span style="color:#ce915b; ">"col-sm-7 form"</span><span style="color:#808073; ">></span>
 								<span style="color:#808073; ">&lt;</span><span style="color:#4ec9b0; ">Form </span><span style="color: #9cdcfe; ">onSubmit</span>=<span style="color:#358bd6; ">{this</span>.<span style="color:#dcdcaa; ">handleSubmit</span><span style="color:#358bd6; ">}</span><span style="color:#808073; "> /></span>
 								<span style="color:#358bd6; ">{this</span>.<span style="color: #9cdcfe; ">state</span>.<span style="color: #9cdcfe; ">error</span> && <span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">p</span> <span style="color: #9cdcfe; ">className</span>=<span style="color:#ce915b; ">"error"</span><span style="color:#808073; ">></span><span style="color:#358bd6; ">{this</span>.<span style="color: #9cdcfe; ">state</span>.<span style="color: #9cdcfe; ">error</span><span style="color:#358bd6; ">}</span><span style="color:#808073; ">&lt;/</span><span style="color:#358bd6; ">p</span><span style="color:#808073; ">></span><span style="color:#358bd6; ">}</span>
 								<span style="color:#358bd6; ">{this</span>.<span style="color: #9cdcfe; ">state</span>.<span style="color: #9cdcfe; ">list</span>.<span style="color:#dcdcaa; ">map</span>(<span style="color: #9cdcfe; ">data</span><span style="color:#358bd6; "> => </span>(
@@ -709,8 +709,15 @@ npm install bootstrap --save
 }
 										</code></pre>
 								</div>
+								<p>Также добавим класс общему тегу <code class="code">&lt;div></code> в компоненте Weather:</p>
+								<div class="frame">
+									<pre style="margin: 0.5rem;">
+										<code>
+<span style="color:#808073; ">&lt;</span><span style="color:#358bd6; ">div</span><span style="color:#9cdcfe; "> className</span>=<span style="color:#ce915b; ">"infoWeath"</span><span style="color:#808073; ">></span>
+										</code></pre>
+								</div>
 								<p><b>Наше приложение готово!</b> Оно не только показывает нужную информацию, но и привлекательно выглядит.</p>
-								<p><img src="./images/app_styles.png" style="width: 1260px; height: 709px; margin: 25px 0;"></p>
+								<iframe src="https://egorx2000.github.io/react_app/" frameborder="0" width="1260px" height="709px"></iframe>
 							</li>
 						</ul>
 					</div>
@@ -745,8 +752,7 @@ npm install bootstrap --save
 					<div class="conc__text">
 						<h1 class="conc__title">Заключение</h1>
 						<p>По итогам гайда мы научились основам работы с React но и создали полноценное приложение.</p>
-						<p><span class="conc__links"><a href="https://egorx2000.github.io/react_app/" target="_block">Посмотреть моё приложение можно тут.</a></p>
-						<p><span class="conc__links"><a href="https://github.com/EgorX2000/react_app" target="_block">А взглянуть на код здесь.</a></p>
+						<p><span class="conc__links"><a href="https://github.com/EgorX2000/react_app" target="_block">Посмотреть код можно здесь.</a></p>
 						<p><b>Надеюсь, что вам было интересно!</b></p>
 					</div>
 				</div>
