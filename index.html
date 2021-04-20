@@ -16,11 +16,19 @@
 					<div class="header__inner">
 						<div class="header__logo"><a href="#intro">React</a></div>
 
-						<nav class="nav">
-							<a class="nav__link" href="#what">Что такое React и зачем его использовать?</a>
-							<a class="nav__link" href="#html">Добавляем React на свой HTML сайт</a>
-							<a class="nav__link" href="#app">Создаем свое приложение на React</a>
-						</nav>
+						<ul class="nav">
+							<li class="nav__link"><a href="#what">Что такое React и зачем его использовать?</a></li>
+							<li class="nav__link"><a href="#html">Добавляем React на свой HTML сайт</a></li>
+							<li class="nav__link" id="btn"><a href="#app">Создаем свое приложение на React</a>
+								<ul class="menu">
+									<li><a href="#app_1">Работа с компонентами</a></li>
+									<li><a href="#app_2">Работа с API</a></li>
+									<li><a href="#app_3">Создание формы и работа со свойствами</a></li>
+									<li><a href="#app_4">Вывод информации в компоненте</a></li>
+									<li><a href="#app_5">Добавление стилей</a></li>
+								</ul>							
+							</li>
+						</ul>
 					</div>
 				</div>
 			</header>
@@ -266,7 +274,7 @@ npm start
 								</div>
 								<p>Новое приложение автоматически откроется в браузере!</p>								
 							</li>
-							<li>
+							<li id="app_1">
 								<h1 class="app__subtitle">Работа с компонентами</h1>
 								<p>Теперь мы наконец можем приступить к непосредственной работе над нашим веб-приложением. Открываем файл App.js, который находится в папке src, и для удобства работы удаляем всё его содержимое. Затем импортируем React:</p>
 								<div class="frame">
@@ -366,7 +374,7 @@ npm start
 								<p>Теперь наше приложение отображает основную информацию о своём предназначении!</p>
 								<iframe src="https://egorx2000.github.io/react_app_info/" frameborder="1" width="1260px" height="709px"></iframe>
 							</li>
-							<li>
+							<li id="app_2">
 								<h1 class="app__subtitle">Работа с API</h1>
 								<p>Для начала создадим файл form.js в папке components и напишем там то же самое, что и в компоненте Info (заменяя все info на form). Далее создаём файл weather.js и проделываем аналогичные действия. Затем импортируем эти компоненты в наше приложение:</p>
 								<div class="frame">
@@ -448,7 +456,7 @@ npm start
 										</code></pre>
 								</div>
 							</li>
-							<li>
+							<li id="app_3">
 								<h1 class="app__subtitle">Создание формы и работа со свойствами</h1>
 								<p>Для начала перейдём в компонент Form и добавим туда пару функций:</p>
 								<div class="frame">
@@ -495,7 +503,7 @@ npm start
 										</code></pre>
 								</div>
 							</li>
-							<li>
+							<li id="app_4">
 								<h1 class="app__subtitle">Вывод информации в компоненте</h1>
 								<p>После URL запроса мы получаем данные, но нам нужно их где-то хранить и как-то передавать. Для этого существуют объекты <code class="code">state</code>. Для создания таких объектов в компоненте App перед основной функцией напишем:</p>
 								<div class="frame">
@@ -640,7 +648,7 @@ npm start
 								<p>Теперь наше приложение полностью функционирует!</p>
 								<iframe src="https://egorx2000.github.io/react_app_nostyles/" frameborder="1" width="1260px" height="709px"></iframe>
 							</li>
-							<li>
+							<li id="app_5">
 								<h1 class="app__subtitle">Добавление стилей</h1>
 								<p>Наше приложение уже работает, но выглядит как-то не очень. Время это исправить!</p>
 								<p>Откроем командную строку (cmd) и установим <code class="code">bootstrap</code>:</p>
