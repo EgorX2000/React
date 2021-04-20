@@ -117,7 +117,7 @@ h1, h2, h3, h4, h5, h6{
 /*Navigation*/
 
 .nav{
-    font-size: 10px;
+    font-size: 11px;
     text-transform: uppercase;
 }
 
@@ -127,37 +127,37 @@ h1, h2, h3, h4, h5, h6{
     margin: 0 10px;
     position: relative;
 
+    cursor: pointer;
+}
+
+.nav__link a{
     color: #fff;
     text-decoration: none;
 
     transition: color 0.1s linear;
-
-    cursor: pointer;
 }
 
-.nav__link:after{
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px;
-    opacity: 0;
-
-    background-color: #61dafb;
-
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1;
-
-    transition: opacity 0.1s linear;
-}
-
-.nav__link:hover {
+.nav__link a:hover {
     color: #61dafb;  
 }
 
-.nav__link:hover:after {
-    opacity: 1;
+.menu {
+    display: none;
+    position: absolute;
+    min-width: 211.39px;
+    background-color: #20232a;
+    list-style: none;
+    padding: 0;
+}
+
+.menu a{
+    text-decoration: none;
+    display: block;
+    margin: 10px;
+}
+
+#btn:hover .menu{
+    display: block;
 }
 
 /*Slider*/
